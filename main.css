@@ -328,6 +328,9 @@ ul {
 		margin: 2%;
 		top: 290px;
 	}
+	.landing_left > ul {
+		visibility: hidden;
+	}
 	.landing_right {
 		position: absolute;
 		top: 0px;
