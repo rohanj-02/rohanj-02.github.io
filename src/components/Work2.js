@@ -30,11 +30,7 @@ export default class Work2 extends Component {
 					</li>
 				</ul>
 				<a href={this.state.web_link}>
-					<img
-						src={this.state.img_src}
-						alt="Project image"
-						class="work_image"
-					/>
+					<img src={this.state.img_src} alt="Project" class="work_image" />
 				</a>
 			</div>
 		);

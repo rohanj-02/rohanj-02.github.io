@@ -1,5 +1,5 @@
 import { Octokit } from "https://cdn.pika.dev/@octokit/core";
-import GITHUB_AUTH_KEY from "./config.js";
+import GITHUB_AUTH_KEY from "../src/components/config.js";
 
 const octokit = new Octokit({ auth: `${GITHUB_AUTH_KEY}` });
 
