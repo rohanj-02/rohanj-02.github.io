@@ -1,10 +1,40 @@
 import React, { Component } from "react";
+import "../styles/stats.css";
+import StatsCard from "./StatsCard";
+const py = require("../images/python_icon.svg");
 
 export default class StatsTab extends Component {
 	render() {
 		const { py, js, java, c, html, css, assembly } = this.props.obj;
 		return (
-			<div class="stats_tab">
+			<div className="stats_display">
+				<StatsCard
+					title="Python"
+					value={
+						py.additions - py.deletions < 0
+							? 0
+							: py.additions - py.deletions
+					}
+					img_path={require("../images/python_icon.svg")}
+				/>
+				<StatsCard
+					title="Java"
+					value={
+						java.additions - java.deletions < 0
+							? 0
+							: java.additions - java.deletions
+					}
+					img_path={require("../images/java_icon.svg")}
+				/>
+				<StatsCard
+					title="JavaScript"
+					value={
+						js.additions - js.deletions < 0
+							? 0
+							: js.additions - js.deletions
+					}
+					img_path={require("../images/nodejs_icon.svg")}
+				/>
 				<h4>Python</h4>
 				<p>
 					{py.additions - py.deletions < 0

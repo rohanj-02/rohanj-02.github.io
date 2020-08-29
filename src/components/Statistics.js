@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { Octokit } from "@octokit/core";
 import GITHUB_AUTH_KEY from "./config";
 import StatsTab from "./StatsTab";
+import "../styles/stats.css";
+import Tabs from "@material-ui/core/Tabs";
+import Tab from "@material-ui/core/Tab";
 
 export default class Statistics extends Component {
 	state = {
@@ -34,7 +37,7 @@ export default class Statistics extends Component {
 			assembly: { additions: 0, deletions: 0 },
 		},
 		octokit: new Octokit({ auth: `${GITHUB_AUTH_KEY}` }),
-		selected: "month",
+		selected: 0,
 	};
 
 	getOneCommit = async (owner, repo, ref) => {
@@ -46,6 +49,7 @@ export default class Statistics extends Component {
 			})
 			.then((response) => {
 				const files = response.data.files;
+				console.log(response);
 				const curr_date = new Date();
 				const commit_date = new Date(response.data.commit.author.date);
 				const diff_in_time = curr_date.getTime() - commit_date.getTime();
@@ -187,6 +191,7 @@ export default class Statistics extends Component {
 				page: 0,
 			}
 		);
+		console.log(response);
 		const filteredResponse = response.data.filter((event) => {
 			const created_date = new Date(event.created_at);
 			const curr_date = new Date();
@@ -198,7 +203,7 @@ export default class Statistics extends Component {
 				diff_in_date <= 30
 			);
 		});
-
+		console.log(filteredResponse);
 		let commitSHAs = [];
 		await filteredResponse.forEach((pushEvent) => {
 			const repo_name = pushEvent.repo.name;
@@ -223,29 +228,71 @@ export default class Statistics extends Component {
 		this.getUserEvent("rohanj-02");
 	}
 
-	handleClick = (e) => {
+	handleChange = (e, newval) => {
 		this.setState({
-			selected: e.target.name,
+			selected: newval,
 		});
 	};
 
 	render() {
 		const { day, week, month, selected } = this.state;
+
 		return (
-			<div class="stats">
-				<button onClick={this.handleClick} name="day">
-					Day
-				</button>
-				<button onClick={this.handleClick} name="week">
-					Week
-				</button>
-				<button onClick={this.handleClick} name="month">
-					Month
-				</button>
-				{selected === "day" ? <StatsTab obj={day} /> : null}
-				{selected === "week" ? <StatsTab obj={week} /> : null}
-				{selected === "month" ? <StatsTab obj={month} /> : null}
+			<div className="stats">
+				<Tabs
+					value={selected}
+					onChange={this.handleChange}
+					indicatorColor="primary"
+					textColor="primary"
+					variant="fullWidth"
+					centered
+				>
+					<Tab label="Day" />
+					<Tab label="Week" />
+					<Tab label="Month" />
+				</Tabs>
+				{selected === 0 ? <StatsTab obj={day} /> : null}
+				{selected === 1 ? <StatsTab obj={week} /> : null}
+				{selected === 2 ? <StatsTab obj={month} /> : null}
 			</div>
+			// <div className="stats">
+			// 	<div className="stats_tabs">
+			// 		<input
+			// 			type="radio"
+			// 			name="tabs"
+			// 			id="day"
+			// 			onChange={this.handleClick}
+			// 		/>
+			// 		<label forhtml="day">Day</label>
+			// 		<input
+			// 			type="radio"
+			// 			name="tabs"
+			// 			id="week"
+			// 			onChange={this.handleClick}
+			// 		/>
+			// 		<label forhtml="day">Week</label>
+			// 		<input
+			// 			type="radio"
+			// 			name="tabs"
+			// 			id="month"
+			// 			onChange={this.handleClick}
+			// 		/>
+			// 		<label forhtml="month">Month</label>
+			// 		<div class="slider"><div class="indicator"></div></div>
+			// 		{/* <button onClick={this.handleClick} name="day">
+			// 			Day
+			// 		</button>
+			// 		<button onClick={this.handleClick} name="week">
+			// 			Week
+			// 		</button>
+			// 		<button onClick={this.handleClick} name="month">
+			// 			Month
+			// 		</button> */}
+			// 	</div>
+			// 	{selected === "day" ? <StatsTab obj={day} /> : null}
+			// 	{selected === "week" ? <StatsTab obj={week} /> : null}
+			// 	{selected === "month" ? <StatsTab obj={month} /> : null}
+			// </div>
 		);
 	}
 }

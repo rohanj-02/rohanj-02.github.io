@@ -11,13 +11,13 @@ export default class Work2 extends Component {
 	};
 	render() {
 		return (
-			<div class="work2 clearfix">
-				<div class="work_text">
+			<div className="work2 clearfix">
+				<div className="work_text">
 					<h1>{this.state.title}</h1>
 					<a href={this.state.web_link}>
 						<h5>View Project</h5>
 					</a>
-					<div class="underline"></div>
+					<div className="underline"></div>
 				</div>
 				<ul>
 					<li>
@@ -30,7 +30,11 @@ export default class Work2 extends Component {
 					</li>
 				</ul>
 				<a href={this.state.web_link}>
-					<img src={this.state.img_src} alt="Project" class="work_image" />
+					<img
+						src={this.state.img_src}
+						alt="Project"
+						className="work_image"
+					/>
 				</a>
 			</div>
 		);
