@@ -10,20 +10,20 @@
 }
 
 .clearfix::after {
-	content: "";
+	content: '';
 	clear: both;
 	display: table;
 }
 
 html {
-	font-family: "Heebo", sans-serif;
+	font-family: 'Heebo', sans-serif;
 	font-weight: 400;
 }
 
 body {
 	width: 60%;
 	margin: auto;
-	background-image: url("../images/BG.png");
+	background-image: url('../images/BG.png');
 	background-position: top;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -247,7 +247,7 @@ ul {
 }
 /* Footer */
 .footer {
-	background-image: url("../images/github_big_icon.svg");
+	background-image: url('../images/github_big_icon.svg');
 	background-repeat: no-repeat;
 	background-position: right top;
 	background-size: 320px;

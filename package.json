@@ -22,7 +22,7 @@
 		"deploy": "gh-pages -d build",
 		"lint": "eslint ./",
 		"lint-fix": "eslint ./ --fix",
-		"format": "prettier --write \"**/*.{js,jsx,json,md}\""
+		"format": "prettier --write \"**/*.{js,jsx,json,md}\" --check src"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
@@ -53,7 +53,8 @@
 	},
 	"lint-staged": {
 		"*.{js,jsx,ts,tsx,html,css,json,md,yaml,yml,graphql}": [
-			"npm run lint-fix"
+			"npm run lint-fix",
+			"npm run format"
 		]
 	},
 	"husky": {

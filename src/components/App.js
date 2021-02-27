@@ -4,12 +4,13 @@ import AppNavBar from './AppNavBar';
 import Landing from './Landing';
 import Skills from './Skills';
 import Work1 from './Work1';
-import Work2 from './Work2';
 // import Statistics from "./Statistics";
 import Footer from './Footer';
-import project1 from '../images/project1.png';
-import project2 from '../images/project2.png';
-import project3 from '../images/project3.png';
+import Rummy from '../images/Rummy.png';
+import ResetMSM from '../images/ResetMSM.png';
+import Memboro from '../images/Memboro.png';
+// import Pixels from '../images/Pixels.png';
+// import RandomVocab from '../images/RandomVocab.png';
 
 function App() {
 	return (
@@ -18,20 +19,17 @@ function App() {
 			<Landing />
 			<Skills />
 			<Work1
-				git_link="https://github.com/rohanj-02/Rummy"
-				img_src={project1}
-				title="Rummy Game"
+				web_link="https://resetmsm.com"
+				img_src={ResetMSM}
+				title="Reset MSM"
+				isWork1
 			/>
-			<Work2
-				git_link="https://github.com/rohanj-02/Pixels"
-				web_link="https://rohan19095.wixsite.com/mysite"
-				img_src={project2}
-				title="PIXELS"
-			/>
+			<Work1 web_link="https://memboro.com" img_src={Memboro} title="Memboro" />
 			<Work1
-				git_link="https://github.com/rohanj-02/random-word-thrower"
-				img_src={project3}
-				title="Vocabulary Builder"
+				git_link="https://github.com/rohanj-02/Rummy"
+				img_src={Rummy}
+				title="Rummy Game"
+				isWork1
 			/>
 			<Footer />
 			{/* <Statistics /> */}

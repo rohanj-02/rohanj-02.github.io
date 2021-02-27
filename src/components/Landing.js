@@ -1,6 +1,6 @@
-import React from "react";
-import profile_image from "../images/profile_image.png";
-import scroll_down from "../images/scroll_down.svg";
+import React from 'react';
+import profile_image from '../images/profile_image.png';
+import scroll_down from '../images/scroll_down.svg';
 
 export default function Landing() {
 	return (
@@ -8,9 +8,10 @@ export default function Landing() {
 			<div className="landing_wrapper">
 				<div className="landing_left">
 					<h1>Rohan Jain.</h1>
+					<br />
 					<p>
-						Hello! My name is Rohan Jain. I am pursuing a degree in
-						Bachelor of Technology specialising in Computer Science.
+						Hello! My name is Rohan Jain. I am pursuing a degree in Bachelor of
+						Technology specialising in Computer Science.
 					</p>
 					<ul>
 						<li>
@@ -28,7 +29,7 @@ export default function Landing() {
 					</ul>
 				</div>
 				<div className="landing_right">
-					<img src={profile_image} alt="profile pic" width="300px" />
+					<img src={profile_image} alt="profile" width="300px" />
 				</div>
 			</div>
 			<img src={scroll_down} alt="scroll down" className="scroll" />
