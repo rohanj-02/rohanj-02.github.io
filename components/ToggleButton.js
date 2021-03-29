@@ -3,7 +3,6 @@ import { ThemeContext } from '../context/ThemeContext';
 
 export default function ToggleButton(props) {
 	const { toggleTheme } = useContext(ThemeContext);
-	console.log(toggleTheme);
 	return (
 		<div className="w-full h-full flex flex-col justify-center items-center">
 			<div className="flex justify-center items-center">

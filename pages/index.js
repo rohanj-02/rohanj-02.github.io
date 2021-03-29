@@ -6,7 +6,6 @@ export default function Home() {
 	const [theme, setTheme] = useState('light');
 
 	const toggleTheme = () => {
-		console.log('real');
 		if (theme === 'light') {
 			setTheme('dark');
 		} else {
