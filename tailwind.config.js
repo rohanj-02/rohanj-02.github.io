@@ -4,8 +4,11 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				'primary-dark': '#0e0e0e',
-				'primary-light': '#e0e0e0',
+				// primary for text secondary for background, accent for primary accent, muted for secondary action
+				primary: 'var(--color-primary)',
+				secondary: 'var(--color-secondary)',
+				accent: 'var(--color-accent)',
+				muted: 'var(--color-muted)',
 			},
 		},
 	},

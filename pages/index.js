@@ -3,13 +3,13 @@ import { ThemeContext } from '../context/ThemeContext';
 import Layout from '../components/layout';
 import { useState } from 'react';
 export default function Home() {
-	const [theme, setTheme] = useState('light');
+	const [theme, setTheme] = useState('theme-light');
 
 	const toggleTheme = () => {
-		if (theme === 'light') {
-			setTheme('dark');
+		if (theme === 'theme-light') {
+			setTheme('theme-dark');
 		} else {
-			setTheme('light');
+			setTheme('theme-light');
 		}
 	};
 
@@ -17,7 +17,7 @@ export default function Home() {
 		<ThemeContext.Provider value={{ theme, toggleTheme }}>
 			<div className={theme}>
 				<Layout>
-					<div className="bg-primary-light dark:bg-primary-dark text-primary-dark dark:text-primary-light flex flex-col items-center justify-center min-h-screen py-2">
+					<div className="bg-primary text-secondary flex flex-col items-center justify-center min-h-screen py-2">
 						<Head>
 							<title>Create Next App</title>
 							<link rel="icon" href="/favicon.ico" />

@@ -1,13 +1,23 @@
 @tailwind base;
+
+.theme-light {
+	--color-primary: #e0e0e0;
+	--color-secondary: #0e0e0e;
+	--color-accent: #1d4ed8;
+	--color-muted: #93c5fd;
+}
+
+.theme-dark {
+	--color-primary: #0e0e0e;
+	--color-secondary: #e0e0e0;
+	--color-accent: #1d4ed8;
+	--color-muted: #93c5fd;
+}
+
 @tailwind components;
 @tailwind utilities;
 
 html {
-	margin: 0px;
-	padding: 0px;
-}
-
-:root {
 	margin: 0px;
 	padding: 0px;
 }

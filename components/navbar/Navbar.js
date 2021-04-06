@@ -37,26 +37,26 @@ export default function Navbar(props) {
 		},
 	];
 	return (
-		<nav class="bg-primary-light dark:bg-primary-dark px-8 flex justify-between  text-primary-dark dark:text-primary-light">
-			<div class="flex flex-1">
-				<div id="logo" class="flex h-20 items-center flex-shrink-0">
+		<nav className="bg-primary px-8 flex justify-between text-secondary">
+			<div className="flex flex-1">
+				<div id="logo" className="flex h-20 items-center flex-shrink-0">
 					<img
 						src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2634840.jpg&f=1&nofb=1"
-						class="block h-8 w-auto"
+						className="block h-8 w-auto"
 					/>
 				</div>
-				<div class="flex h-20 items-stretch content-center align-middle">
+				<div className="flex h-20 items-stretch content-center align-middle">
 					{navItems.map((item, index) => (
 						<a
 							href={item.link}
 							key={index}
-							class="flex py-auto px-4 hover:bg-gray-500">
-							<div class="my-auto">{item.name}</div>
+							className="flex py-auto px-4 hover:bg-gray-500">
+							<div className="my-auto">{item.name}</div>
 						</a>
 					))}
 				</div>
 			</div>
-			<div class="flex h-20 items-stretch content-center align-middle">
+			<div className="flex h-20 items-stretch content-center align-middle">
 				<div id="toggle-button">
 					<ToggleButton />
 				</div>

@@ -2,13 +2,15 @@ import { useContext } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
 
 export default function ToggleButton(props) {
-	const { toggleTheme } = useContext(ThemeContext);
+	const { theme, toggleTheme } = useContext(ThemeContext);
+	const isLight = theme === 'theme-light';
+
 	return (
 		<div className="w-full h-full flex flex-col justify-center items-center">
 			<div className="flex justify-center items-center">
 				<span className="">
 					<svg
-						className="h-6 w-6 text-gray-500 dark:text-gray-400"
+						className="h-6 w-6 text-secondary"
 						fill="none"
 						viewBox="0 0 24 24"
 						stroke="currentColor">
@@ -21,13 +23,20 @@ export default function ToggleButton(props) {
 					</svg>
 				</span>
 				<div
-					className="w-14 h-7 flex items-center cursor-pointer rounded-full mx-3 px-1 bg-gray-300  dark:bg-blue-700"
+					className={
+						(isLight ? 'bg-gray-300' : 'bg-accent') +
+						' w-14 h-7 flex items-center cursor-pointer rounded-full mx-3 px-1'
+					}
 					onClick={toggleTheme}>
-					<div className="bg-white w-5 h-5 rounded-full shadow-md transform translate-x-0  dark:translate-x-7"></div>
+					<div
+						className={
+							(isLight ? 'translate-x-0' : 'translate-x-7') +
+							' bg-white w-5 h-5 rounded-full shadow-md transform'
+						}></div>
 				</div>
 				<span className="">
 					<svg
-						className="h-6 w-6 text-gray-400 dark:text-gray-500"
+						className="h-6 w-6 text-secondary"
 						fill="none"
 						viewBox="0 0 24 24"
 						stroke="currentColor">
