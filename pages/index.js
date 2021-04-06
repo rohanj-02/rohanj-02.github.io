@@ -1,7 +1,9 @@
 import Head from 'next/head';
 import { ThemeContext } from '../context/ThemeContext';
 import Layout from '../components/layout';
+import Projects from '../components/Projects';
 import { useState } from 'react';
+
 export default function Home() {
 	const [theme, setTheme] = useState('theme-light');
 
@@ -62,6 +64,14 @@ export default function Home() {
 								nulla pariatur. Excepteur sint occaecat cupidatat non proident,
 								sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</p>
+						</div>
+					</div>
+					<div className="bg-primary text-secondary flex flex-col items-center justify-center p-4 flex-1 ">
+						<div className="mx-4 mt-16 mb-4 p-4">
+							<h2 className="font-semibold text-3xl">My Projects</h2>
+						</div>
+						<div className="">
+							<Projects />
 						</div>
 					</div>
 
