@@ -37,7 +37,7 @@ export default function Navbar(props) {
 		},
 	];
 	return (
-		<nav class="bg-white px-8 flex justify-between">
+		<nav class="bg-primary-light dark:bg-primary-dark px-8 flex justify-between  text-primary-dark dark:text-primary-light">
 			<div class="flex flex-1">
 				<div id="logo" class="flex h-20 items-center flex-shrink-0">
 					<img

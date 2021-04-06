@@ -17,7 +17,7 @@ export default function Home() {
 		<ThemeContext.Provider value={{ theme, toggleTheme }}>
 			<div className={theme}>
 				<Layout>
-					<div className="bg-white dark:bg-black flex flex-col items-center justify-center min-h-screen py-2">
+					<div className="bg-primary-light dark:bg-primary-dark text-primary-dark dark:text-primary-light flex flex-col items-center justify-center min-h-screen py-2">
 						<Head>
 							<title>Create Next App</title>
 							<link rel="icon" href="/favicon.ico" />
