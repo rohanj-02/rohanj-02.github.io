@@ -11,6 +11,9 @@ module.exports = {
 				muted: 'var(--color-muted)',
 			},
 		},
+		fontFamily: {
+			sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
+		},
 	},
 	variants: {
 		extend: {},

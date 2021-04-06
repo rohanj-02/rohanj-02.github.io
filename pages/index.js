@@ -15,79 +15,66 @@ export default function Home() {
 
 	return (
 		<ThemeContext.Provider value={{ theme, toggleTheme }}>
-			<div className={theme}>
+			<div className={theme + ' bg-primary text-secondary h-screen'}>
 				<Layout>
-					<div className="bg-primary text-secondary flex flex-col items-center justify-center min-h-screen py-2">
-						<Head>
-							<title>Create Next App</title>
-							<link rel="icon" href="/favicon.ico" />
-						</Head>
-						<main className="flex flex-col items-center justify-center flex-1 px-20 text-center">
+					<Head>
+						<link rel="preconnect" href="https://fonts.gstatic.com" />
+						<link
+							href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+							rel="stylesheet"
+						/>
+						<title>Create Next App</title>
+						<link rel="icon" href="/favicon.ico" />
+					</Head>
+					<main className="flex flex-col items-center justify-center mt-10 flex-1 text-left h-4/5">
+						<div className="m-4 p-4">
 							<h1 className="text-6xl font-semibold">
-								Welcome to{' '}
-								<a className="text-blue-900" href="https://nextjs.org">
-									Next.js!
-								</a>
+								Full-stack Developer & Student.
 							</h1>
-
-							<p className="mt-3 text-2xl">
-								Get started by editing{' '}
-								<code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-									pages/index.js
-								</code>
+						</div>
+						<div>
+							<p className="text-2xl font-extralight m-2 p-2">
+								Lorem Ipsum text here, and I love what I do.
 							</p>
-
-							<div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-								<a
-									href="https://nextjs.org/docs"
-									className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600">
-									<h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-									<p className="mt-4 text-xl">
-										Find in-depth information about Next.js features and API.
-									</p>
-								</a>
-
-								<a
-									href="https://nextjs.org/learn"
-									className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600">
-									<h3 className="text-2xl font-bold">Learn &rarr;</h3>
-									<p className="mt-4 text-xl">
-										Learn about Next.js in an interactive course with quizzes!
-									</p>
-								</a>
-
-								<a
-									href="https://github.com/vercel/next.js/tree/master/examples"
-									className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600">
-									<h3 className="text-2xl font-bold">Examples &rarr;</h3>
-									<p className="mt-4 text-xl">
-										Discover and deploy boilerplate example Next.js projects.
-									</p>
-								</a>
-
-								<a
-									href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-									className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600">
-									<h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-									<p className="mt-4 text-xl">
-										Instantly deploy your Next.js site to a public URL with
-										Vercel.
-									</p>
-								</a>
-							</div>
-						</main>
-
-						<footer className="flex items-center justify-center w-full h-24 border-t">
-							<a
-								className="flex items-center justify-center"
-								href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-								target="_blank"
-								rel="noopener noreferrer">
-								Powered by{' '}
-								<img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-							</a>
-						</footer>
+						</div>
+						<div className="m-4 p-4 ">
+							<img src="./images/profile_image.png" className="max-h-72" />
+						</div>
+						<div className="m-4 p-4 flex-grow bottom-0 flex">
+							<img
+								src="./images/down-arrow.png"
+								className="mt-auto mb-0 flex-col-reverse"
+							/>
+						</div>
+					</main>
+					<div className="bg-secondary text-primary flex flex-col items-center justify-center mt-10 p-5 flex-1 ">
+						<div className="mx-4 mt-16 mb-4 p-4">
+							<h2 className="font-semibold text-3xl">Hi, I am Rohan Jain.</h2>
+						</div>
+						<div className="max-w-4xl  text-center mx-4 px-4 mb-16 pb-5">
+							<p>
+								{' '}
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+								enim ad minim veniam, quis nostrud exercitation ullamco laboris
+								nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+								in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+								nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+								sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</div>
 					</div>
+
+					<footer className="flex items-center justify-center w-full h-24 border-t">
+						<a
+							className="flex items-center justify-center"
+							href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+							target="_blank"
+							rel="noopener noreferrer">
+							Powered by{' '}
+							<img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
+						</a>
+					</footer>
 				</Layout>
 			</div>
 		</ThemeContext.Provider>
