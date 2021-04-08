@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 
-export default function Projects() {
+export default function Projects(): JSX.Element {
 	const projects = [
 		{
 			name: 'Memboro',
@@ -43,8 +43,8 @@ export default function Projects() {
 	];
 	return (
 		<div className="flex flex-wrap text-center justify-center mx-4 px-4 mb-16 pb-5">
-			{projects.map(project => (
-				<ProjectCard project={project} />
+			{projects.map((project, index) => (
+				<ProjectCard project={project} key={index} />
 			))}
 		</div>
 	);

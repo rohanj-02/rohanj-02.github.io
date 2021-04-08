@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 import Projects from '../components/Projects';
 import { useState } from 'react';
 
-export default function Home() {
+export default function Home(): JSX.Element {
 	const [theme, setTheme] = useState('theme-light');
 
 	const toggleTheme = () => {

@@ -1,23 +1,24 @@
-import { useState } from 'react';
-import MobileNavbar from './MobileNavbar.js';
+// import { useState } from 'react';
+// import MobileNavbar from './MobileNavbar.jsx';
 import ToggleButton from '../ToggleButton';
+import Link from 'next/link';
 
-export default function Navbar(props) {
-	const [minifyNavbar, setMinifyNavbar] = useState(false);
-	const [openMobileNav, setOpenMobileNav] = useState(false);
-	function toggleMobileNav(e) {
-		setOpenMobileNav(!openMobileNav);
-	}
-	function scrollFunction(e) {
-		if (
-			document.body.scrollTop > 80 ||
-			document.documentElement.scrollTop > 80
-		) {
-			setMinifyNavbar(true);
-		} else {
-			setMinifyNavbar(false);
-		}
-	}
+export default function Navbar(): JSX.Element {
+	// const [minifyNavbar, setMinifyNavbar] = useState(false);
+	// const [openMobileNav, setOpenMobileNav] = useState(false);
+	// function toggleMobileNav(e) {
+	// 	setOpenMobileNav(!openMobileNav);
+	// }
+	// function scrollFunction(e) {
+	// 	if (
+	// 		document.body.scrollTop > 80 ||
+	// 		document.documentElement.scrollTop > 80
+	// 	) {
+	// 		setMinifyNavbar(true);
+	// 	} else {
+	// 		setMinifyNavbar(false);
+	// 	}
+	// }
 	const navItems = [
 		{
 			link: '/',
@@ -47,12 +48,11 @@ export default function Navbar(props) {
 				</div>
 				<div className="flex h-20 items-stretch content-center align-middle">
 					{navItems.map((item, index) => (
-						<a
-							href={item.link}
-							key={index}
-							className="flex py-auto px-4 hover:bg-gray-500">
-							<div className="my-auto">{item.name}</div>
-						</a>
+						<Link href={item.link} key={index}>
+							<a className="flex py-auto px-4 hover:bg-gray-500">
+								<div className="my-auto">{item.name}</div>
+							</a>
+						</Link>
 					))}
 				</div>
 			</div>

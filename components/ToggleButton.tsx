@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
 
-export default function ToggleButton(props) {
+export default function ToggleButton(): JSX.Element {
 	const { theme, toggleTheme } = useContext(ThemeContext);
 	const isLight = theme === 'theme-light';
 

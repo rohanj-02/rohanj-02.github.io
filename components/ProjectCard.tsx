@@ -1,8 +1,12 @@
 import React from 'react';
 
-export default function ProjectCard(props) {
+type ProjectCardPropTypes = {
+	project: { name: string; description: string; image: string; link: string };
+};
+
+export default function ProjectCard(props: ProjectCardPropTypes): JSX.Element {
 	const { name, description, image, link } = props.project;
-	console.log(props.project);
+	// console.log(props.project);
 
 	return (
 		<div
