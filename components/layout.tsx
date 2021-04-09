@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './navbar/Navbar';
 import { ThemeContext } from '../context/ThemeContext';
 import Head from 'next/head';
+import Footer from './Footer';
 
 type LayoutPropTypes = {
 	children: string | JSX.Element[] | JSX.Element;
@@ -32,6 +33,7 @@ export default function Layout({ children }: LayoutPropTypes): JSX.Element {
 
 				<Navbar />
 				{children}
+				<Footer />
 			</div>
 		</ThemeContext.Provider>
 	);
