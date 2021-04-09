@@ -1,9 +1,14 @@
 import { getAllProjectSlugs, getProjectData } from 'lib/projects';
 import { ProjectSlug } from 'types/project';
 import Layout from '../../components/layout';
+import Head from 'next/head';
 
 export async function getStaticPaths(): Promise<{
-	paths: any;
+	paths: {
+		params: {
+			slug: string;
+		};
+	}[];
 	fallback: boolean;
 }> {
 	const paths = getAllProjectSlugs();
@@ -31,5 +36,12 @@ export async function getStaticProps({
 }
 
 export default function Post({ data }: { data: ProjectSlug }): JSX.Element {
-	return <Layout>{data.slug}</Layout>;
+	return (
+		<Layout>
+			<Head>
+				<title>{data.slug}</title>
+			</Head>
+			{/* {data.slug} */}
+		</Layout>
+	);
 }
