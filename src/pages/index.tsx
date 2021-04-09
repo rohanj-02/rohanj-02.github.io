@@ -1,10 +1,14 @@
 import Layout from '../components/layout';
 import Projects from '../components/Projects';
+import Head from 'next/head';
 
 export default function Home(): JSX.Element {
 	return (
 		<div className="h-screen">
 			<Layout>
+				<Head>
+					<title>Rohan Jain | Portfolio</title>
+				</Head>
 				<main className="flex flex-col items-center justify-center mt-10 flex-1 text-left h-4/5">
 					<div className="m-4 p-4">
 						<h1 className="text-6xl font-semibold">
@@ -16,7 +20,7 @@ export default function Home(): JSX.Element {
 							Lorem Ipsum text here, and I love what I do.
 						</p>
 					</div>
-					<div className="m-4 p-4 ">
+					<div className="m-4 p-4">
 						<img src="./images/profile_image.png" className="max-h-72" />
 					</div>
 					<div className="m-4 p-4 flex-grow bottom-0 flex">

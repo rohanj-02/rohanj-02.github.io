@@ -1,5 +1,5 @@
-import { getAllProjectSlugs, getProjectData } from 'lib/projects';
-import { ProjectSlug } from 'types/project';
+import { getAllProjectSlugs, getProjectData } from '@/lib/projects';
+import { ProjectSlug } from '@/types/project';
 import Layout from '../../components/layout';
 import Head from 'next/head';
 import Technologies from '../../components/Technologies';

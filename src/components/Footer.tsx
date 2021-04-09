@@ -64,7 +64,7 @@ function Footer(): JSX.Element {
 								key={index}
 								className="m-1 rounded-full flex bg-secondary text-primary">
 								<Link href={elem.link}>
-									<a target="_blank">
+									<a target="_blank" rel="noreferrer">
 										<div className="p-2 text-center h-10 w-10">{elem.icon}</div>
 									</a>
 								</Link>

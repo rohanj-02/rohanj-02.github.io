@@ -1,8 +1,8 @@
 import fs from 'fs';
 import path from 'path';
-import { ProjectSlug } from 'types/project';
+import { ProjectSlug } from '@/types/project';
 
-const postsDirectory = 'projects/';
+const postsDirectory = 'src/projects/';
 
 export function getAllProjectSlugs(): {
 	params: {
