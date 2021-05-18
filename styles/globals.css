@@ -8,10 +8,15 @@
 }
 
 .theme-dark {
-	--color-primary: #0e0e0e;
-	--color-secondary: #e0e0e0;
-	--color-accent: #1d4ed8;
-	--color-muted: #93c5fd;
+	--color-primary: #1a2331;
+	--color-secondary: #fcfbfb;
+	--color-accent: #d23047;
+	--color-muted: #8b8c8c;
+	/* fcfbfb, 919787, d23047, 8b8c8c, 1a2331 */
+	/* 214c5c, 46C3D9, 26aabf, 9dc890, e9f3ce */
+	/* rgb(9, 11, 15) */
+	/* rgba(0,0,0, 0.87) */
+	/* rgb(26, 35, 49) */
 }
 
 @tailwind components;
