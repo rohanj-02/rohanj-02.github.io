@@ -62,10 +62,10 @@ export default function Navbar(): JSX.Element {
 			name: 'Contact',
 		},
 	];
-	const navClass = 'bg-primary px-8 flex justify-between text-secondary z-50';
+	const navClass = 'bg-primary px-8 flex justify-between text-secondary';
 
 	return (
-		<div className="fixed top-0 left-0 w-full">
+		<div className="fixed top-0 left-0 w-full z-50">
 			<nav className={navClass} id="navbar" style={{ transition: '0.4s' }}>
 				<div className="flex flex-1">
 					<div id="logo" className="flex items-center flex-shrink-0">
