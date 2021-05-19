@@ -27,7 +27,7 @@ export default function Layout({ children }: LayoutPropTypes): JSX.Element {
 						href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
 						rel="stylesheet"
 					/>
-					<title>Create Next App</title>
+					<title>Rohan Jain</title>
 					<link rel="icon" href="/favicon.ico" />
 				</Head>
 

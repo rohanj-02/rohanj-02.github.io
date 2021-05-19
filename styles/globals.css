@@ -1,11 +1,11 @@
 @tailwind base;
 
 .theme-light {
-	--color-primary: #e0e0e0;
-	--color-secondary: #0e0e0e;
-	--color-accent: #1d4ed8;
-	--color-muted: #93c5fd;
-	--color-hover: #3c4b63;
+	--color-primary: #fcfbfb;
+	--color-secondary: #1a2331;
+	--color-accent: #d23047;
+	--color-muted: #8b8c8c;
+	--color-hover: #374357;
 }
 
 .theme-dark {

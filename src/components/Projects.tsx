@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectCard from './ProjectCard';
+import ProjectCard from './Projects/ProjectCard';
 
 export default function Projects(): JSX.Element {
 	const projects = [
