@@ -5,6 +5,7 @@
 	--color-secondary: #0e0e0e;
 	--color-accent: #1d4ed8;
 	--color-muted: #93c5fd;
+	--color-hover: #3c4b63;
 }
 
 .theme-dark {
@@ -12,6 +13,7 @@
 	--color-secondary: #fcfbfb;
 	--color-accent: #d23047;
 	--color-muted: #8b8c8c;
+	--color-hover: #374357;
 	/* fcfbfb, 919787, d23047, 8b8c8c, 1a2331 */
 	/* 214c5c, 46C3D9, 26aabf, 9dc890, e9f3ce */
 	/* rgb(9, 11, 15) */
@@ -25,6 +27,7 @@
 html {
 	margin: 0px;
 	padding: 0px;
+	scroll-behavior: smooth;
 }
 
 body {

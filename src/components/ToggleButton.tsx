@@ -6,8 +6,8 @@ export default function ToggleButton(): JSX.Element {
 	const isLight = theme === 'theme-light';
 
 	return (
-		<div className="w-full h-full flex flex-col justify-center items-center">
-			<div className="flex justify-center items-center">
+		<div className="w-full h-full flex flex-col justify-center ">
+			<div className="flex">
 				<span className="">
 					<svg
 						className="h-6 w-6 text-secondary"

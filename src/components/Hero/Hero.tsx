@@ -27,7 +27,7 @@ export default function Hero(): JSX.Element {
 				initial="hidden"
 				animate="visible"
 				variants={getFadeInVariants(0.4)}>
-				<h1 className="text-6xl font-semibold">
+				<h1 className="text-6xl font-semibold text-center">
 					Hello, I am <span className="text-accent">Rohan Jain!</span>
 				</h1>
 			</motion.div>
@@ -35,7 +35,7 @@ export default function Hero(): JSX.Element {
 				initial="hidden"
 				animate="visible"
 				variants={getFadeInVariants(0.8)}>
-				<p className="text-4xl font-medium m-2 p-2">
+				<p className="text-4xl font-medium m-2 p-2 text-center">
 					I am a full stack web developer.
 				</p>
 			</motion.div>

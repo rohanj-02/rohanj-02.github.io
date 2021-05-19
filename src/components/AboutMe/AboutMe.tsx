@@ -21,7 +21,10 @@ export default function AboutMe(): JSX.Element {
 		}
 	}, [controls, inView]);
 	return (
-		<div className="bg-secondary text-primary flex flex-col items-center justify-center mt-10 p-5 flex-1 ">
+		<div
+			id="about-me"
+			className="bg-secondary text-primary flex flex-col items-center justify-center p-5 mt-10 flex-1 "
+			style={{ scrollMarginTop: '5rem' }}>
 			<motion.div
 				ref={ref}
 				animate={controls}

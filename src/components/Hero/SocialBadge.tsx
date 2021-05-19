@@ -14,7 +14,7 @@ export default function SocialBadge(props: BadgeProps): JSX.Element {
 				y: '-0.25rem',
 				transition: { duration: 0.2 },
 			}}
-			className="m-2 rounded-full flex shadow-lg">
+			className="m-2 rounded-full flex">
 			<Link href={props.link}>
 				<a target="_blank" rel="noreferrer">
 					<div className="p-2 text-center h-10 w-10 hover:text-accent hover:translate-x-1">

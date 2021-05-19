@@ -9,6 +9,7 @@ module.exports = {
 				secondary: 'var(--color-secondary)',
 				accent: 'var(--color-accent)',
 				muted: 'var(--color-muted)',
+				hoverCol: 'var(--color-hover)',
 			},
 		},
 		fontFamily: {
