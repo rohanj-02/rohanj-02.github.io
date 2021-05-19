@@ -22,11 +22,7 @@ export default function Navbar(): JSX.Element {
 	const navItems = [
 		{
 			link: '/',
-			name: 'Home',
-		},
-		{
-			link: '/',
-			name: 'About',
+			name: 'About Me',
 		},
 		{
 			link: '/',
@@ -34,17 +30,18 @@ export default function Navbar(): JSX.Element {
 		},
 		{
 			link: '/',
-			name: 'Anything',
+			name: 'Statistics',
+		},
+		{
+			link: '/',
+			name: 'Contact',
 		},
 	];
 	return (
-		<nav className="bg-primary px-8 flex justify-between text-secondary">
+		<nav className="bg-primary px-8 flex justify-between text-secondary fixed top-0 left-0 w-full">
 			<div className="flex flex-1">
 				<div id="logo" className="flex h-20 items-center flex-shrink-0">
-					<img
-						src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2634840.jpg&f=1&nofb=1"
-						className="block h-8 w-auto"
-					/>
+					<img src="images/rj-logo.svg" className="block h-12 w-auto" />
 				</div>
 				<div className="flex h-20 items-stretch content-center align-middle">
 					{navItems.map((item, index) => (

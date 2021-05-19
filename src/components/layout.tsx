@@ -8,7 +8,7 @@ type LayoutPropTypes = {
 	children: string | JSX.Element[] | JSX.Element;
 };
 export default function Layout({ children }: LayoutPropTypes): JSX.Element {
-	const [theme, setTheme] = useState('theme-light');
+	const [theme, setTheme] = useState('theme-dark');
 
 	const toggleTheme = () => {
 		if (theme === 'theme-light') {
