@@ -1,11 +1,13 @@
 import React from 'react';
 import Layout from '../../components/Layout/layout';
-import Projects from '../../components/Projects';
+import ProjectSection from '../../components/Projects/ProjectSection';
 
 function ProjectHomePage(): JSX.Element {
 	return (
 		<Layout>
-			<Projects />
+			<div className="">
+				<ProjectSection />
+			</div>
 		</Layout>
 	);
 }

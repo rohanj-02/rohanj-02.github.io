@@ -1,6 +1,8 @@
 import React from 'react';
-import Link from 'next/link';
-import { GitHub, Globe } from 'react-feather';
+import { SiGithub } from 'react-icons/si';
+import { BiGlobe } from 'react-icons/bi';
+import SocialBadge from '../components/Hero/SocialBadge';
+
 type Props = {
 	link?: string;
 	website?: string;
@@ -9,34 +11,26 @@ type Props = {
 
 function ProjectLinks(props: Props): JSX.Element {
 	const { link, website, github } = props;
-	// console.log(tech);
+	const iconStyle = { fontSize: 28 };
 	if (!link && !github && !website) {
 		return <></>;
 	}
 	return (
 		<div>
-			<h3 className="text-2xl font-semibold">Important Links</h3>
-			<hr className="h-0.5 my-2 bg-accent border-none" />
-			<div className="flex flex-wrap">
+			{/* <h3 className="text-2xl font-semibold">Important Links</h3> */}
+			{/* <hr className="h-0.5 my-2 bg-accent border-none" /> */}
+			<div className="flex flex-wrap items-center justify-center">
 				{(website || link) && (
-					<div className="m-1 rounded-full flex bg-secondary text-primary">
-						<a href={website || link} target="_blank" rel="noreferrer">
-							<div className="p-2 text-center h-10 w-10">
-								<Globe />
-							</div>
-						</a>
-					</div>
+					<SocialBadge
+						link={website || link}
+						icon={<BiGlobe style={iconStyle} />}
+					/>
 				)}
 				{github && (
-					<div className="m-1 rounded-full flex bg-secondary text-primary">
-						<Link href={github}>
-							<a target="_blank" rel="noreferrer">
-								<div className="p-2 text-center h-10 w-10">
-									<GitHub />
-								</div>
-							</a>
-						</Link>
-					</div>
+					<SocialBadge
+						link={github || link}
+						icon={<SiGithub style={iconStyle} />}
+					/>
 				)}
 			</div>
 		</div>

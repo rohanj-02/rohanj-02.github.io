@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import ProjectCard from './ProjectCard';
 import Section from '../Layout/Section';
 
@@ -11,7 +12,7 @@ export default function ProjectSection(): JSX.Element {
 						name: 'Memboro',
 						description: 'Some app',
 						image: './images/Memboro.png',
-						link: '/memboro',
+						slug: 'memboro',
 					}}
 				/>
 
@@ -20,13 +21,13 @@ export default function ProjectSection(): JSX.Element {
 						name: 'Memboro',
 						description: 'Some app',
 						image: './images/Memboro.png',
-						link: '/memboro',
+						slug: 'memboro',
 					}}
 				/>
 				<div className="flex self-end mr-4">
-					<a className="hover:underline float-right" href="/projects">
-						See all Projects
-					</a>
+					<Link href="/projects">
+						<a className="hover:underline float-right">See all Projects</a>
+					</Link>
 				</div>
 			</div>
 		</Section>

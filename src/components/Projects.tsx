@@ -7,38 +7,38 @@ export default function Projects(): JSX.Element {
 			name: 'Memboro',
 			description: 'Some app',
 			image: './images/Memboro.png',
-			link: '/memboro',
+			slug: '/memboro',
 		},
 		{
 			name: 'Memboro',
 			description:
 				'Some app Some app Some app Some app Some app Some app Some app Some app Some app Some app Some app Some app Some app Some app Some app ',
 			image: './images/Memboro.png',
-			link: '/memboro',
+			slug: '/memboro',
 		},
 		{
 			name: 'Memboro',
 			description: 'Some app',
 			image: './images/Memboro.png',
-			link: '/memboro',
+			slug: '/memboro',
 		},
 		{
 			name: 'Memboro',
 			description: 'Some app',
 			image: './images/Memboro.png',
-			link: '/memboro',
+			slug: '/memboro',
 		},
 		{
 			name: 'Memboro',
 			description: 'Some app',
 			image: './images/Memboro.png',
-			link: '/memboro',
+			slug: '/memboro',
 		},
 		{
 			name: 'Memboro',
 			description: 'Some app',
 			image: './images/Memboro.png',
-			link: '/memboro',
+			slug: '/memboro',
 		},
 	];
 	return (

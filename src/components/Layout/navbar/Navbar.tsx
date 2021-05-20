@@ -46,19 +46,19 @@ export default function Navbar(): JSX.Element {
 	}, []);
 	const navItems = [
 		{
-			link: '#about-me',
+			link: '/#about-me',
 			name: 'About Me',
 		},
 		{
-			link: '#projects',
+			link: '/#projects',
 			name: 'Projects',
 		},
 		{
-			link: '#statistics',
+			link: '/#statistics',
 			name: 'Statistics',
 		},
 		{
-			link: '#contact-me',
+			link: '/#contact-me',
 			name: 'Contact',
 		},
 	];
@@ -69,9 +69,9 @@ export default function Navbar(): JSX.Element {
 			<nav className={navClass} id="navbar" style={{ transition: '0.4s' }}>
 				<div className="flex flex-1">
 					<div id="logo" className="flex items-center flex-shrink-0">
-						<Link href="#">
+						<Link href="/#">
 							<a>
-								<img src="images/rj-logo.svg" className="block h-12 w-auto" />
+								<img src="/images/rj-logo.svg" className="block h-12 w-auto" />
 							</a>
 						</Link>
 					</div>

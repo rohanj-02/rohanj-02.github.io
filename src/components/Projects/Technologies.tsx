@@ -3,10 +3,11 @@ import TechPill from './TechPill';
 
 type Props = {
 	tech: string[];
+	inverted?: boolean;
 };
 
 function Technologies(props: Props): JSX.Element {
-	const { tech } = props;
+	const { tech, inverted } = props;
 	// console.log(tech);
 	return (
 		<div>
@@ -14,7 +15,7 @@ function Technologies(props: Props): JSX.Element {
 			{/* <hr className="h-0.5 my-2 bg-accent border-none" /> */}
 			<div className="flex flex-wrap">
 				{tech.map((elem, index) => (
-					<TechPill data={elem} key={index} />
+					<TechPill data={elem} key={index} inverted={inverted} />
 				))}
 			</div>
 		</div>
