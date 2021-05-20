@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import ImageCarousel from './ImageCarousel';
 import Technologies from './Technologies';
 import { motion } from 'framer-motion';
 
@@ -29,7 +28,7 @@ export default function ProjectCard(props: ProjectCardPropTypes): JSX.Element {
 					</div>
 				</div>
 				<div className="w-full sm:w-1/2">
-					<ImageCarousel images={[image]} slug={description} />
+					<img src={image} alt={description} />
 				</div>
 			</motion.a>
 		</Link>

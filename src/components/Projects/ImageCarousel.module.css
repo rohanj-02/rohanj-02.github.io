@@ -1,0 +1,28 @@
+.example-container {
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.next,
+.prev {
+	top: calc(50% - 20px);
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+	font-size: 24px;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.next {
+	right: 15px;
+}
+
+.prev {
+	left: 15px;
+}
