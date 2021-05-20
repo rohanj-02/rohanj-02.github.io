@@ -10,6 +10,7 @@ module.exports = {
 				accent: 'var(--color-accent)',
 				muted: 'var(--color-muted)',
 				hoverCol: 'var(--color-hover)',
+				placeholderCol: 'var(--color-placeholder)',
 				// darkestHue: 'rgb(9, 11, 15)',
 				// darkestHue: 'rgba(13, 17, 24, 0.87)',
 			},

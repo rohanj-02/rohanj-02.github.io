@@ -9,12 +9,14 @@ interface IProps {
 	variants?: AnimationProps['variants'];
 	resetAnimation?: boolean;
 	resetOnScrollDown?: boolean;
+	classNames?: string;
 }
 
 export default function AnimateWhenVisible({
 	children,
 	variants,
 	resetAnimation = false,
+	classNames = '',
 }: // resetOnScrollDown = false,
 IProps): JSX.Element {
 	const controls = useAnimation();
@@ -43,7 +45,8 @@ IProps): JSX.Element {
 					visible: { opacity: 1, scale: 1, transition: { delay: 0.4 } },
 					hidden: { opacity: 0, scale: 0 },
 				}
-			}>
+			}
+			className={classNames}>
 			{children}
 		</motion.div>
 	);

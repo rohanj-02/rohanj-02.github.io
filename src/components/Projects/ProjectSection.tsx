@@ -5,25 +5,27 @@ import Section from '../Layout/Section';
 
 export default function ProjectSection(): JSX.Element {
 	return (
-		<Section id="projects" title="My Projects" resetAnimation>
-			<div className="flex flex-col container max-w-4xl items-center justify-center">
+		<Section id="projects" title="My Projects">
+			<div className="flex flex-col max-w-4xl items-center justify-center">
 				<ProjectCard
 					project={{
-						name: 'Memboro',
-						description: 'Some app',
-						image: './images/Memboro.png',
-						slug: 'memboro',
+						name: 'Demo Project',
+						description: 'This is the description of my so called project',
+						image:
+							'https://d33wubrfki0l68.cloudfront.net/dd23708ebc4053551bb33e18b7174e73b6e1710b/dea24/static/images/wallpapers/shared-colors@2x.png',
+						slug: 'demo',
+					}}
+				/>
+				<ProjectCard
+					project={{
+						name: 'Demo Project',
+						description: 'This is the description of my so called project',
+						image:
+							'https://d33wubrfki0l68.cloudfront.net/dd23708ebc4053551bb33e18b7174e73b6e1710b/dea24/static/images/wallpapers/shared-colors@2x.png',
+						slug: 'demo',
 					}}
 				/>
 
-				<ProjectCard
-					project={{
-						name: 'Memboro',
-						description: 'Some app',
-						image: './images/Memboro.png',
-						slug: 'memboro',
-					}}
-				/>
 				<div className="flex self-end mr-4">
 					<Link href="/projects">
 						<a className="hover:underline float-right">See all Projects</a>

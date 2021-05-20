@@ -18,7 +18,7 @@ export default function Section({
 }: SectionProps): JSX.Element {
 	const sectionClassNames = `${
 		inverted ? 'bg-secondary text-primary' : 'bg-primary text-secondary'
-	} flex flex-col items-center justify-center p-5 mt-10 flex-1`;
+	} flex flex-col items-center justify-center p-5 pt-10 flex-1`;
 	return (
 		<section
 			id={id || 'invalid'}
@@ -31,11 +31,9 @@ export default function Section({
 					</div>
 				)}
 			</FadeInWhenVisible>
-			<FadeInWhenVisible resetAnimation={resetAnimation}>
-				<div className="container max-w-4xl flex flex-col sm:flex-row mx-4 px-4 mb-16 pb-5">
-					{children}
-				</div>
-			</FadeInWhenVisible>
+			<div className="max-w-4xl flex flex-col sm:flex-row mx-4 px-4 mb-16 pb-5">
+				{children}
+			</div>
 		</section>
 	);
 }
