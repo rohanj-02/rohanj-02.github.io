@@ -61,7 +61,7 @@ export default function Contact(): JSX.Element {
 				</div>
 				<button
 					type="submit"
-					className="px-4 py-2 bg-accent m-2 text-secondary">
+					className="w-full sm:w-1/2 md:w-1/4 px-4 py-2 bg-accent m-2 text-secondary">
 					Submit
 				</button>
 			</div>

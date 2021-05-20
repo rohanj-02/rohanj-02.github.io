@@ -1,6 +1,6 @@
 import React from 'react';
 import { FileText, Mail, Phone } from 'react-feather';
-import SocialLinks from './Hero/SocialLinks';
+import SocialLinks from '../Hero/SocialLinks';
 
 function Footer(): JSX.Element {
 	const arr = [

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Navbar from './navbar/Navbar';
-import { ThemeContext } from '../context/ThemeContext';
+import { ThemeContext } from '../../context/ThemeContext';
 import Head from 'next/head';
 import Footer from './Footer';
 
 type LayoutPropTypes = {
-	children: string | JSX.Element[] | JSX.Element;
+	children: React.ReactNode;
 };
 export default function Layout({ children }: LayoutPropTypes): JSX.Element {
 	const [theme, setTheme] = useState('theme-dark');

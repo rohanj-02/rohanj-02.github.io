@@ -1,4 +1,4 @@
-import ToggleButton from '../ToggleButton';
+import ToggleButton from '../../ToggleButton';
 import Link from 'next/link';
 import { useEffect, useRef } from 'react';
 import { useState } from 'react';
