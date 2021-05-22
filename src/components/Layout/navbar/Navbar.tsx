@@ -50,13 +50,13 @@ export default function Navbar(): JSX.Element {
 			name: 'About Me',
 		},
 		{
-			link: '/#projects',
+			link: '/projects',
 			name: 'Projects',
 		},
-		{
-			link: '/#statistics',
-			name: 'Statistics',
-		},
+		// {
+		// 	link: '/#statistics',
+		// 	name: 'Statistics',
+		// },
 		{
 			link: '/#contact-me',
 			name: 'Contact',

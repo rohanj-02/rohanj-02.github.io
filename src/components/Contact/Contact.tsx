@@ -2,10 +2,44 @@ import React from 'react';
 import { useState } from 'react';
 import Section from '../Layout/Section';
 import FadeInWhenVisible from '../utils/FadeInWhenVisible';
+import axios from 'axios';
+import Alert from './Alert';
+import Loader from './Loader';
 
 export default function Contact(): JSX.Element {
 	const [name, setName] = useState('');
 	const [message, setMessage] = useState('');
+	const [response, setResponse] = useState('');
+	const [responseState, setResponseState] = useState('');
+	const [isLoading, setIsLoading] = useState(false);
+
+	const handleSubmit = (): void => {
+		if (name === '' || message == '') {
+			setResponse('Please fill all the fields!');
+			setResponseState('error');
+			return;
+		}
+
+		setIsLoading(true);
+		axios
+			.post('/api/mail', {
+				name: name,
+				message: message,
+			})
+			.then(res => {
+				setIsLoading(false);
+				setResponse(res?.data?.message);
+				setResponseState(res.status === 200 ? 'success' : 'error');
+				// console.log('Response', res);
+			})
+			.catch(err => {
+				setIsLoading(false);
+				setResponse(err.response.data.errmess);
+				setResponseState('error');
+				// eslint-disable-next-line no-console
+				console.log('Error', err);
+			});
+	};
 
 	return (
 		<Section title="Contact" id="contact-me">
@@ -19,6 +53,7 @@ export default function Contact(): JSX.Element {
 								type="text"
 								placeholder="Name"
 								id="name"
+								required
 								name="name"
 								value={name}
 								onChange={e => setName(e.target.value)}
@@ -29,6 +64,7 @@ export default function Contact(): JSX.Element {
 							<textarea
 								placeholder="Message"
 								id="message"
+								required
 								value={message}
 								onChange={e => setMessage(e.target.value)}
 								name="message"
@@ -37,10 +73,15 @@ export default function Contact(): JSX.Element {
 						</div>
 					</form>
 				</div>
+				{!isLoading && responseState && (
+					<Alert status={responseState} message={response} />
+				)}
 				<button
 					type="submit"
-					className="w-full sm:w-1/2 md:w-1/4 px-4 py-2 bg-accent m-2 text-secondary">
-					Submit
+					disabled={isLoading}
+					onClick={handleSubmit}
+					className="w-full flex sm:w-1/2 md:w-1/4 px-4 py-2 bg-accent m-2 mt-3 text-secondary justify-center items-center">
+					{isLoading ? <Loader /> : 'Submit'}
 				</button>
 			</FadeInWhenVisible>
 		</Section>
