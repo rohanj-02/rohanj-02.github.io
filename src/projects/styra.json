@@ -1,0 +1,22 @@
+{
+	"name": "Styra",
+	"description": "A chrome extension that detects change in browser surfing behaviour of the user and alerts the user when they are distracted. It helps you stay productive and on track of your goals. This project won the 1st prize in HackPSU'21.",
+	"images": [
+		"/images/Styra-Cover.png",
+		"/images/Styra-1.png",
+		"/images/Styra-2.png",
+		"/images/Styra-3.png",
+		"/images/Styra-4.png",
+		"/images/Styra-5.png"
+	],
+	"website": "https://devpost.com/software/styra",
+	"github": "https://github.com/manage-me-hack",
+	"technologies": [
+		"JavaScript",
+		"ChromeExtension",
+		"Python",
+		"Tenserflow",
+		"Keras",
+		"Django"
+	]
+}

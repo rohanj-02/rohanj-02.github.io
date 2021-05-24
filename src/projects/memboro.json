@@ -1,0 +1,8 @@
+{
+	"name": "Memboro",
+	"description": "A social media platform that connects a content creator with their fans. Fans can subscribe to tiers and get access to exclusive content. I am currently working on this project.",
+	"images": ["/images/Memboro.png"],
+	"website": "https://www.memboro.com",
+	"github": "",
+	"technologies": ["React", "Redux", "Razorpay", "Nextjs", "Django"]
+}

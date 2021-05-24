@@ -1,0 +1,8 @@
+{
+	"name": "Reset MSM",
+	"description": "A freelance project for an e-commerce platform for people to book instructors for yoga and personal wellness. Complete with a login and payment system.",
+	"images": ["/images/ResetMSM.png"],
+	"website": "https://www.resetmsm.com",
+	"github": "",
+	"technologies": ["React", "Redux", "AWS Amplify", "Stripe"]
+}

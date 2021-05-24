@@ -42,7 +42,7 @@ export default function Project({ data }: { data: ProjectSlug }): JSX.Element {
 	return (
 		<Layout>
 			<Head>
-				<title>{data.slug}</title>
+				<title>{data.name + ' | Rohan Jain'}</title>
 			</Head>
 			<div className="flex justify-center m-2 p-3 mt-20 pt-16">
 				<h1 className="text-5xl font-semibold text-center">{data.name}</h1>

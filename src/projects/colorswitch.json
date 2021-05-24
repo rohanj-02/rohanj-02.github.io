@@ -1,0 +1,13 @@
+{
+	"name": "Color Switch",
+	"description": "A clone of the popular game Color Switch made for Advanced Programming course in my 3rd semester. The focus of the project was to learn OOP concepts in Java.",
+	"images": [
+		"/images/ColorSwitch/Landing.png",
+		"/images/ColorSwitch/Gameplay.png",
+		"/images/ColorSwitch/PauseMenu.png",
+		"/images/ColorSwitch/Continue.png",
+		"/images/ColorSwitch/ConfirmExit.png"
+	],
+	"github": "https://github.com/rohanj-02/ColorSwitch",
+	"technologies": ["Java", "JavaFX"]
+}
