@@ -4,6 +4,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 0;
 }
 
 .next,
@@ -25,4 +26,22 @@
 
 .prev {
 	left: 15px;
+}
+
+.fullscreen {
+	top: 20px;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+	font-size: 24px;
+	cursor: pointer;
+	right: 20px;
+	opacity: 0.5;
+	z-index: 2;
+}
+
+.fullscreen:hover {
+	opacity: 1;
 }

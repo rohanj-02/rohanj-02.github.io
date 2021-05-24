@@ -2,7 +2,7 @@ import { getAllProjectSlugs, getProjectData } from '@/lib/projects';
 import { ProjectSlug } from '@/types/project';
 import Head from 'next/head';
 import Technologies from '../../components/Projects/Technologies';
-import ImageCarousel from '../../components/Projects/ImageCarousel';
+import ImageCarousel from '../../components/Projects/MediaCarousel';
 import ProjectLinks from '../../components/ProjectLinks';
 
 export async function getStaticPaths(): Promise<{

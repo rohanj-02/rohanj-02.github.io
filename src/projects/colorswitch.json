@@ -6,7 +6,8 @@
 		"/images/ColorSwitch/Gameplay.png",
 		"/images/ColorSwitch/PauseMenu.png",
 		"/images/ColorSwitch/Continue.png",
-		"/images/ColorSwitch/ConfirmExit.png"
+		"/images/ColorSwitch/ConfirmExit.png",
+		"/images/ColorSwitch/NormalGameplay.webm"
 	],
 	"github": "https://github.com/rohanj-02/ColorSwitch",
 	"technologies": ["Java", "JavaFX"]

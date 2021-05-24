@@ -2,6 +2,16 @@ module.exports = {
 	purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
 	darkMode: 'class', // or 'media' or 'class'
 	theme: {
+		zIndex: {
+			0: 0,
+			10: 10,
+			20: 20,
+			30: 30,
+			40: 40,
+			50: 50,
+			1000: 1000,
+			auto: 'auto',
+		},
 		extend: {
 			transitionDuration: {
 				400: '400ms',
@@ -26,13 +36,23 @@ module.exports = {
 			48: '12rem',
 			64: '16rem',
 			full: '100%',
+			'screen/2': '80vh',
 		},
 		maxHeight: {
+			'screen/2': '66vh',
+			screen: '100vh',
+			'screen-4/5': '80vh',
 			22: '5.5rem',
 		},
 		fontFamily: {
 			sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
 		},
+		maxWidth: {
+			'screen-4/5': '80vw',
+		},
+		// height: {
+		// 	'screen/2': '50vh',
+		// },
 	},
 	variants: {
 		extend: {},
