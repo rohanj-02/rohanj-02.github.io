@@ -1,6 +1,5 @@
 import { getAllProjectSlugs, getProjectData } from '@/lib/projects';
 import { ProjectSlug } from '@/types/project';
-import Layout from '../../components/Layout/layout';
 import Head from 'next/head';
 import Technologies from '../../components/Projects/Technologies';
 import ImageCarousel from '../../components/Projects/ImageCarousel';
@@ -40,7 +39,7 @@ export async function getStaticProps({
 
 export default function Project({ data }: { data: ProjectSlug }): JSX.Element {
 	return (
-		<Layout>
+		<>
 			<Head>
 				<title>{data.name + ' | Rohan Jain'}</title>
 			</Head>
@@ -65,6 +64,6 @@ export default function Project({ data }: { data: ProjectSlug }): JSX.Element {
 					</div>
 				</div>
 			</div>
-		</Layout>
+		</>
 	);
 }

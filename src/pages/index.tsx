@@ -1,4 +1,3 @@
-import Layout from '../components/Layout/layout';
 import ProjectSection from '../components/Projects/ProjectSection';
 import Hero from '../components/Hero/Hero';
 // import Statistics from '../components/Statistics/Statistics';
@@ -28,17 +27,15 @@ export default function Home({
 	data: [ProjectSlug];
 }): JSX.Element {
 	return (
-		<div className="h-screen">
-			<Layout>
-				<Head>
-					<title>Rohan Jain | Portfolio</title>
-				</Head>
-				<Hero />
-				<AboutMe />
-				<ProjectSection projects={projects} seeAll />
-				{/* <Statistics /> */}
-				<Contact />
-			</Layout>
-		</div>
+		<>
+			<Head>
+				<title>Rohan Jain | Portfolio</title>
+			</Head>
+			<Hero />
+			<AboutMe />
+			<ProjectSection projects={projects} seeAll />
+			{/* <Statistics /> */}
+			<Contact />
+		</>
 	);
 }

@@ -13,7 +13,7 @@ export default function ProjectSection({
 	projects: [ProjectSlug];
 }): JSX.Element {
 	return (
-		<Section id="projects" title="My Projects">
+		<Section id={seeAll && 'projects'} title="My Projects">
 			<div className="flex flex-col max-w-4xl items-center justify-center">
 				{projects?.map((proj, idx) => (
 					<ProjectCard key={idx} project={proj} />
@@ -39,7 +39,7 @@ export default function ProjectSection({
 
 				{seeAll && (
 					<FadeInWhenVisible classNames="flex self-end mr-4">
-						<Link href="/projects">
+						<Link href="/projects" scroll>
 							<a className="hover:underline float-right">See all Projects</a>
 						</Link>
 					</FadeInWhenVisible>

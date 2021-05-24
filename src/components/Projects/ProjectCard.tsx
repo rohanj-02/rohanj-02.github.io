@@ -14,7 +14,7 @@ export default function ProjectCard(props: ProjectCardPropTypes): JSX.Element {
 
 	return (
 		<FadeInWhenVisible>
-			<Link href={`/projects/${slug}`} scroll>
+			<Link href={`/projects/${slug}`}>
 				<motion.a
 					whileHover={{
 						scale: 1.05,
@@ -26,7 +26,7 @@ export default function ProjectCard(props: ProjectCardPropTypes): JSX.Element {
 							{name}
 						</h1>
 						<p
-							className="text-sm text-center m-2 p-2 pb-0  mt-0 overflow-hidden"
+							className="text-sm text-center m-2 p-2 pb-0 mt-0 overflow-hidden"
 							style={{
 								display: '-webkit-box',
 								WebkitLineClamp: 3,

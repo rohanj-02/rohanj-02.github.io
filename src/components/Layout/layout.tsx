@@ -52,7 +52,7 @@ export default function Layout({ children }: LayoutPropTypes): JSX.Element {
 				<Navbar />
 				<div className="themed hidden"></div>
 				{children}
-				<Footer />
+				<Footer theme={theme} />
 			</div>
 		</ThemeContext.Provider>
 	);
