@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { AnimatePresence, MotionProps } from 'framer-motion';
 import { wrap } from 'popmotion';
@@ -9,11 +9,14 @@ import {
 	BsFullscreen,
 } from 'react-icons/bs';
 import MediaObject from './MediaObject';
-import Modal from './Modal';
 
 type Props = {
-	images: string[];
+	media: string[];
 	slug: string;
+	style?: React.CSSProperties;
+	objectFit: string;
+	showFullScreenButton?: boolean;
+	setOpen?: (arg0: boolean) => void;
 };
 
 const fadeInDistance = 200;
@@ -41,18 +44,23 @@ const swipePower = (offset: number, velocity: number) => {
 	return Math.abs(offset) * velocity;
 };
 
-function ImageCarousel({ images, slug }: Props): JSX.Element {
+function MediaCarousel({
+	media,
+	slug,
+	style = {},
+	objectFit,
+	showFullScreenButton = false,
+	setOpen,
+}: Props): JSX.Element {
 	const [[page, direction], setPage] = useState([0, 0]);
-	const [open, setOpen] = useState(false);
-	const imageIndex = wrap(0, images.length, page);
+	const mediaIndex = wrap(0, media.length, page);
 
 	const paginate = (newDirection: number) => {
 		setPage([page + newDirection, newDirection]);
 	};
 	const mediaProps = {
-		className: styles.imageStyle + ' object-cover w-full min-h-64',
 		key: page,
-		src: images[imageIndex],
+		src: media[mediaIndex],
 		alt: slug,
 		custom: direction,
 		variants: variants,
@@ -77,23 +85,29 @@ function ImageCarousel({ images, slug }: Props): JSX.Element {
 		},
 	};
 
+	const handleArrowKeys = (e: KeyboardEvent): void => {
+		if (e.key === 'ArrowRight') {
+			paginate(1);
+		}
+		if (e.key === 'ArrowLeft') {
+			paginate(-1);
+		}
+	};
+
+	useEffect(() => {
+		document.addEventListener('keydown', handleArrowKeys);
+		return () => {
+			document.removeEventListener('keydown', handleArrowKeys);
+		};
+	});
+
 	return (
 		<>
-			<Modal open={open} setOpen={setOpen}>
-				<>fds</>
-			</Modal>
-			<div className={styles['example-container']}>
+			<div className={styles['example-container']} style={style}>
 				<AnimatePresence initial={false} custom={direction} exitBeforeEnter>
-					{/* {isImage(images[imageIndex]) ? (
-					<motion.img {...((mediaProps as unknown) as MotionProps)} />
-				) : (
-					<motion.video
-						{...((mediaProps as unknown) as MotionProps)}
-						controls
-					/>
-				)} */}
 					<MediaObject
-						filePath={images[imageIndex]}
+						objectFit={objectFit}
+						filePath={media[mediaIndex]}
 						mediaProps={(mediaProps as unknown) as MotionProps}
 					/>
 				</AnimatePresence>
@@ -107,14 +121,16 @@ function ImageCarousel({ images, slug }: Props): JSX.Element {
 					onClick={() => paginate(-1)}>
 					<BsCaretLeftFill />
 				</div>
-				<div
-					className={`${styles.fullscreen} bg-secondary text-primary w-10 h-10 rounded-md transition duration-200 shadow-md hover:text-accent`}
-					onClick={() => setOpen(true)}>
-					<BsFullscreen style={{ opacity: 1 }} />
-				</div>
+				{showFullScreenButton && (
+					<div
+						className={`${styles.fullscreen} bg-secondary text-primary w-10 h-10 rounded-md transition duration-200 shadow-md hover:text-accent`}
+						onClick={() => setOpen(true)}>
+						<BsFullscreen style={{ opacity: 1 }} />
+					</div>
+				)}
 			</div>
 		</>
 	);
 }
 
-export default ImageCarousel;
+export default MediaCarousel;

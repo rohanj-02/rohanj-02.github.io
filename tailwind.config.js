@@ -27,32 +27,34 @@ module.exports = {
 				// darkestHue: 'rgb(9, 11, 15)',
 				// darkestHue: 'rgba(13, 17, 24, 0.87)',
 			},
+			maxWidth: {
+				'screen-4/5': '80vw',
+			},
 		},
 		minHeight: {
 			0: '0',
 			'1/4': '25%',
 			'1/2': '50%',
 			'3/4': '75%',
+			24: '6rem',
 			48: '12rem',
 			64: '16rem',
 			full: '100%',
 			'screen/2': '80vh',
 		},
+		minWidth: {
+			48: '12rem',
+		},
 		maxHeight: {
 			'screen/2': '66vh',
 			screen: '100vh',
 			'screen-4/5': '80vh',
+			'screen-9/10': '90vh',
 			22: '5.5rem',
 		},
 		fontFamily: {
 			sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
 		},
-		maxWidth: {
-			'screen-4/5': '80vw',
-		},
-		// height: {
-		// 	'screen/2': '50vh',
-		// },
 	},
 	variants: {
 		extend: {},
