@@ -1,6 +1,7 @@
 import React from 'react';
-// import { Facebook, Instagram, GitHub, Linkedin } from 'react-feather';
 import { SiFacebook, SiInstagram, SiLinkedin, SiGithub } from 'react-icons/si';
+import { GrMail } from 'react-icons/gr';
+
 import SocialBadge from './SocialBadge';
 export default function SocialLinks(): JSX.Element {
 	const iconStyle = { fontSize: 28 };
@@ -14,12 +15,16 @@ export default function SocialLinks(): JSX.Element {
 			link: 'https://github.com/rohanj-02',
 		},
 		{
-			icon: <SiFacebook style={iconStyle} />,
-			link: '/',
+			icon: <GrMail style={iconStyle} />,
+			link: 'mailto:rohan19095@iiitd.ac.in',
 		},
 		{
 			icon: <SiInstagram style={iconStyle} />,
-			link: '/',
+			link: 'https://www.instagram.com/rohanj_02/',
+		},
+		{
+			icon: <SiFacebook style={iconStyle} />,
+			link: 'https://www.facebook.com/rohan.jain74',
 		},
 	];
 	return (

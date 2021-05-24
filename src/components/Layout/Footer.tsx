@@ -1,21 +1,23 @@
 import React from 'react';
-import { FileText, Mail, Phone } from 'react-feather';
+import { FaFilePdf, FaPhoneAlt } from 'react-icons/fa';
+import { GrMail } from 'react-icons/gr';
 import SocialLinks from '../Hero/SocialLinks';
 
 function Footer(): JSX.Element {
+	const iconStyle = { fontSize: 20 };
 	const arr = [
 		{
-			icon: <Mail />,
+			icon: <GrMail style={iconStyle} />,
 			text: 'rohan19095@iiitd.ac.in',
 			href: 'mailto:rohan19095@iiitd.ac.in',
 		},
 		{
-			icon: <Phone />,
+			icon: <FaPhoneAlt style={iconStyle} />,
 			text: '+917838492901',
 			href: 'tel:+917838492901',
 		},
 		{
-			icon: <FileText />,
+			icon: <FaFilePdf style={iconStyle} />,
 			text: 'Download Resume',
 			href: 'resume-rohanjain.pdf',
 			download: true,
@@ -38,8 +40,6 @@ function Footer(): JSX.Element {
 								<div className="mr-2">{elem.icon}</div>
 								<div>{elem.text}</div>
 							</a>
-							// <div className="mt-2 p-2 flex" key={index}>
-							// </div>
 						))}
 					</div>
 					<div className="flex flex-grow m-2 p-2 items-center">

@@ -75,7 +75,7 @@ export default function Navbar(): JSX.Element {
 							</a>
 						</Link>
 					</div>
-					<div className="hidden sm:flex items-stretch content-center align-middle bg-primary">
+					<div className="hidden sm:flex items-stretch content-center align-middle bg-primary transition duration-400">
 						{navItems.map((item, index) => (
 							<Link href={item.link} key={index}>
 								<a className="flex py-auto px-4 hover:bg-hoverCol">

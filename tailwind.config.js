@@ -3,6 +3,9 @@ module.exports = {
 	darkMode: 'class', // or 'media' or 'class'
 	theme: {
 		extend: {
+			transitionDuration: {
+				400: '400ms',
+			},
 			colors: {
 				// primary for text secondary for background, accent for primary accent, muted for secondary action
 				primary: 'var(--color-primary)',

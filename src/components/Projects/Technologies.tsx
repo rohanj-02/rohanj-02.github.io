@@ -13,7 +13,7 @@ function Technologies(props: Props): JSX.Element {
 		<div>
 			{/* <h3 className="text-2xl font-semibold">Technologies Used</h3> */}
 			{/* <hr className="h-0.5 my-2 bg-accent border-none" /> */}
-			<div className="flex flex-wrap">
+			<div className="flex flex-wrap flex-1 items-center justify-center">
 				{tech.map((elem, index) => (
 					<TechPill data={elem} key={index} inverted={inverted} />
 				))}

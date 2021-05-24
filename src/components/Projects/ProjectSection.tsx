@@ -3,6 +3,7 @@ import Link from 'next/link';
 import ProjectCard from './ProjectCard';
 import Section from '../Layout/Section';
 import { ProjectSlug } from '@/types/project';
+import FadeInWhenVisible from '../utils/FadeInWhenVisible';
 
 export default function ProjectSection({
 	projects,
@@ -37,11 +38,11 @@ export default function ProjectSection({
 				/> */}
 
 				{seeAll && (
-					<div className="flex self-end mr-4">
+					<FadeInWhenVisible classNames="flex self-end mr-4">
 						<Link href="/projects">
 							<a className="hover:underline float-right">See all Projects</a>
 						</Link>
-					</div>
+					</FadeInWhenVisible>
 				)}
 			</div>
 		</Section>
