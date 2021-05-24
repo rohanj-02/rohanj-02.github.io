@@ -5,8 +5,28 @@ import Hero from '../components/Hero/Hero';
 import Contact from '../components/Contact/Contact';
 import AboutMe from '../components/AboutMe/AboutMe';
 import Head from 'next/head';
+import { ProjectSlug } from '@/types/project';
+import { getFeaturedProjects } from '@/lib/projects';
 
-export default function Home(): JSX.Element {
+export async function getStaticProps(): Promise<{
+	props: {
+		data: [ProjectSlug];
+	};
+}> {
+	const projects = getFeaturedProjects();
+	// const projectData = getProjectData(params.slug);
+	return {
+		props: {
+			data: projects,
+		},
+	};
+}
+
+export default function Home({
+	data: projects,
+}: {
+	data: [ProjectSlug];
+}): JSX.Element {
 	return (
 		<div className="h-screen">
 			<Layout>
@@ -15,7 +35,7 @@ export default function Home(): JSX.Element {
 				</Head>
 				<Hero />
 				<AboutMe />
-				<ProjectSection />
+				<ProjectSection projects={projects} seeAll />
 				{/* <Statistics /> */}
 				<Contact />
 			</Layout>
