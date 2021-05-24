@@ -35,7 +35,7 @@ export default function ProjectCard(props: ProjectCardPropTypes): JSX.Element {
 							}}>
 							{description}
 						</p>
-						<div className="flex m-2 p-2 mt-0">
+						<div className="flex m-2 p-2 mt-0 max-h-22 overflow-hidden">
 							<Technologies tech={technologies} />
 						</div>
 					</div>

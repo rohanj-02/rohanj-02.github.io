@@ -27,6 +27,9 @@ module.exports = {
 			64: '16rem',
 			full: '100%',
 		},
+		maxHeight: {
+			22: '5.5rem',
+		},
 		fontFamily: {
 			sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
 		},

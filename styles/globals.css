@@ -33,9 +33,12 @@ html {
 }
 
 body {
+	font-family: 'Poppins', 'Roboto', system-ui, -apple-system, 'Segoe UI',
+		Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
 	margin: 0px;
 	padding: 0px;
 }
+
 .themed {
 	background: black;
 }
