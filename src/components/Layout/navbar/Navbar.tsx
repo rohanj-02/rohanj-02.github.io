@@ -73,7 +73,11 @@ export default function Navbar(): JSX.Element {
 					<div id="logo" className="flex items-center flex-shrink-0">
 						<Link href="/#">
 							<a>
-								<img src="/images/rj-logo.svg" className="block h-12 w-auto" />
+								<img
+									src="/images/rj-logo.svg"
+									className="block h-12 w-auto"
+									alt="logo"
+								/>
 							</a>
 						</Link>
 					</div>

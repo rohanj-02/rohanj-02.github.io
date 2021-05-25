@@ -19,7 +19,11 @@ export default function AboutMe(): JSX.Element {
 							},
 						},
 					}}>
-					<motion.img src="./images/profile_image.png" className="max-h-72" />
+					<motion.img
+						src="./images/profile_image.png"
+						className="max-h-72"
+						alt="Rohan Jain"
+					/>
 				</AnimateWhenVisible>
 			</div>
 			<div className="sm:container max-w-4xl mx-4 px-4 mb-10 pb-5 py-6">
