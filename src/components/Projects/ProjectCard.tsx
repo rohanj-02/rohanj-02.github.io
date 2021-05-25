@@ -39,11 +39,13 @@ export default function ProjectCard(props: ProjectCardPropTypes): JSX.Element {
 							<Technologies tech={technologies} />
 						</div>
 					</div>
-					<div className="w-full sm:w-1/2 min-h-48 max-h-64 overflow-hidden">
+					<div
+						className="w-full sm:w-1/2 min-h-48 max-h-64 overflow-hidden flex items-stretch"
+						style={{ alignContent: 'stretch' }}>
 						<img
 							src={images[0]}
 							alt={description}
-							className="object-cover w-full h-full"
+							className="object-cover flex-grow self-stretch"
 						/>
 					</div>
 				</motion.a>

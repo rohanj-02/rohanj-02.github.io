@@ -26,7 +26,7 @@ export default function AboutMe(): JSX.Element {
 					/>
 				</AnimateWhenVisible>
 			</div>
-			<div className="sm:container max-w-4xl mx-4 px-4 mb-10 pb-5 py-6">
+			<div className="sm:container max-w-4xl mx-4 px-4 mb-10 pb-5 py-6 overflow-hidden">
 				<AnimateWhenVisible
 					variants={{
 						hidden: {
