@@ -24,10 +24,12 @@ function ProjectLinks(props: Props): JSX.Element {
 					<SocialBadge
 						link={website || link}
 						icon={<BiGlobe style={iconStyle} />}
+						iconName="Website"
 					/>
 				)}
 				{github && (
 					<SocialBadge
+						iconName="Github"
 						link={github || link}
 						icon={<SiGithub style={iconStyle} />}
 					/>

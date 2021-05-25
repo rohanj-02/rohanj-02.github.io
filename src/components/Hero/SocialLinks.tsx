@@ -9,28 +9,38 @@ export default function SocialLinks(): JSX.Element {
 		{
 			icon: <SiLinkedin style={iconStyle} />,
 			link: 'https://www.linkedin.com/in/rohanj02/',
+			iconName: 'Linkedin',
 		},
 		{
 			icon: <SiGithub style={iconStyle} />,
 			link: 'https://github.com/rohanj-02',
+			iconName: 'Github',
 		},
 		{
 			icon: <GrMail style={iconStyle} />,
 			link: 'mailto:rohan19095@iiitd.ac.in',
+			iconName: 'Email',
 		},
 		{
 			icon: <SiInstagram style={iconStyle} />,
 			link: 'https://www.instagram.com/rohanj_02/',
+			iconName: 'Instagram',
 		},
 		{
 			icon: <SiFacebook style={iconStyle} />,
 			link: 'https://www.facebook.com/rohan.jain74',
+			iconName: 'Facebook',
 		},
 	];
 	return (
 		<div className="flex">
 			{social.map((elem, idx) => (
-				<SocialBadge key={idx} link={elem.link} icon={elem.icon} />
+				<SocialBadge
+					key={idx}
+					link={elem.link}
+					icon={elem.icon}
+					iconName={elem.iconName}
+				/>
 			))}
 		</div>
 	);

@@ -103,6 +103,7 @@ export default function Navbar(): JSX.Element {
 					className={`block sm:hidden ${styles.menuBtn} ${
 						isOpen ? `${styles.opened} aria-expanded` : ''
 					}`}
+					aria-label="navbar expand"
 					onClick={handleClick}
 					ref={ref}>
 					<svg className="h-8 w-8 fill-current" viewBox="0 0 100 100">
