@@ -13,15 +13,17 @@ function MediaCarouselWrapper({ media, slug }: Props): JSX.Element {
 
 	return (
 		<>
-			<Modal open={open} setOpen={setOpen}>
-				<MediaCarousel
-					style={{ height: '60vh' }}
-					objectFit="contain"
-					showFullScreenButton={false}
-					media={media}
-					slug={slug}
-				/>
-			</Modal>
+			{open && (
+				<Modal open={open} setOpen={setOpen}>
+					<MediaCarousel
+						style={{ height: '60vh' }}
+						objectFit="contain"
+						showFullScreenButton={false}
+						media={media}
+						slug={slug}
+					/>
+				</Modal>
+			)}
 			<MediaCarousel
 				objectFit="cover"
 				showFullScreenButton={true}

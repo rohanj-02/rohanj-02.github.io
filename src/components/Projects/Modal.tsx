@@ -31,22 +31,19 @@ export default function Modal({ open, setOpen, children }: Props): JSX.Element {
 	return (
 		<motion.div
 			className={`fixed z-1000 inset-0 overflow-y-auto text-secondary ${
-				// 'block'
 				open ? 'block' : 'hidden'
 			}`}
 			initial="hidden"
 			variants={{
-				initial: {
+				hidden: {
 					opacity: 0,
-					// scale: 0,
 				},
 				visible: {
 					opacity: 1,
-					// scale: [0, 0.4, 0.7, 0.9, 1],
-					transition: { duration: 2 },
+					transition: { delay: 0.1, duration: 0.4 },
 				},
 			}}
-			animate={controls}
+			animate="visible"
 			aria-labelledby="modal-title"
 			role="dialog"
 			aria-modal="true">
@@ -83,7 +80,18 @@ export default function Modal({ open, setOpen, children }: Props): JSX.Element {
 				From: "opacity-100 translate-y-0 sm:scale-100"
 					To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
 				--> */}
-				<div
+				<motion.div
+					initial="hidden"
+					variants={{
+						hidden: {
+							y: '5rem',
+						},
+						visible: {
+							y: '0rem',
+							transition: { duration: 0.2 },
+						},
+					}}
+					animate="visible"
 					className="inline-block bg-primary rounded-lg text-left overflow-hidden shadow-xl transform transition-all align-middle max-h-screen-4/5 w-4/5 p-12 md:p-16 lg:p-20"
 					style={{ height: '80vh' }}>
 					<span
@@ -102,7 +110,7 @@ export default function Modal({ open, setOpen, children }: Props): JSX.Element {
 										stdDeviation="0.4"
 										floodColor="gray"
 									/>
-								</filter>{' '}
+								</filter>
 							</defs>
 							<title>Close</title>
 							<path
@@ -112,7 +120,7 @@ export default function Modal({ open, setOpen, children }: Props): JSX.Element {
 						</svg>
 					</span>
 					{children}
-				</div>
+				</motion.div>
 			</motion.div>
 		</motion.div>
 	);
