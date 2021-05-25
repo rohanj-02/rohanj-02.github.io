@@ -38,7 +38,7 @@ export default function Layout({ children }: LayoutPropTypes): JSX.Element {
 
 	const pageTitle = 'Rohan Jain';
 	const description =
-		"This is Rohan Jain's portfolio page. He is a fulls tack web developer currently studying in IIITD and workinga s a frontend developer for Memboro. He is familiar with the MERN stack, Svelte, Nextjs, Svelte, Flask and Django.";
+		"This is Rohan Jain's portfolio page. He is a fullstack web developer currently studying in IIITD and working as a frontend developer for Memboro. He is familiar with MERN stack, Svelte, Nextjs, Svelte, Flask and Django.";
 	return (
 		<ThemeContext.Provider value={{ theme, toggleTheme }}>
 			<div className={theme + ' bg-primary text-secondary'}>
@@ -58,7 +58,7 @@ export default function Layout({ children }: LayoutPropTypes): JSX.Element {
 					<meta name="twitter:card" content="summary" key="twcard" />
 					<meta
 						property="og:url"
-						content={`${process.env.NEXT_PUBLIC_URL}`}
+						content={`${process.env.NEXT_PUBLIC_VERCEL_URL}`}
 						key="ogurl"
 					/>
 					<meta
@@ -68,7 +68,7 @@ export default function Layout({ children }: LayoutPropTypes): JSX.Element {
 					/>
 					<meta
 						property="og:image:secure_url"
-						content={`${process.env.NEXT_PUBLIC_URL}/images/rj-logo.svg`}
+						content={`${process.env.NEXT_PUBLIC_VERCEL_URL}/images/rj-logo.svg`}
 					/>
 					<meta property="og:image:type" content="image/svg" />
 					<meta property="og:image:width" content="512" />
