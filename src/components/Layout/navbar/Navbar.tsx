@@ -29,9 +29,11 @@ export default function Navbar(): JSX.Element {
 		) {
 			document.getElementById('navbar').style.height = '5rem';
 			document.getElementById('navbar').classList.add('shadow-lg');
+			document.getElementById('navbar').classList.add('bg-primary');
 		} else {
 			document.getElementById('navbar').style.height = '7rem';
 			document.getElementById('navbar').classList.remove('shadow-lg');
+			document.getElementById('navbar').classList.remove('bg-primary');
 		}
 	}
 
@@ -62,7 +64,7 @@ export default function Navbar(): JSX.Element {
 			name: 'Contact',
 		},
 	];
-	const navClass = 'bg-primary px-8 flex justify-between text-secondary';
+	const navClass = 'px-8 flex justify-between text-secondary';
 
 	return (
 		<div className="fixed top-0 left-0 w-full z-50">
@@ -75,7 +77,9 @@ export default function Navbar(): JSX.Element {
 							</a>
 						</Link>
 					</div>
-					<div className="hidden sm:flex items-stretch content-center align-middle bg-primary transition duration-400">
+					<div
+						id=""
+						className="hidden sm:flex items-stretch content-center align-middle transition duration-400">
 						{navItems.map((item, index) => (
 							<Link href={item.link} key={index}>
 								<a className="flex py-auto px-4 hover:bg-hoverCol">

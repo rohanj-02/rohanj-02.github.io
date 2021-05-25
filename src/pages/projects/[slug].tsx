@@ -43,7 +43,7 @@ export default function Project({ data }: { data: ProjectSlug }): JSX.Element {
 			<Head>
 				<title>{data.name + ' | Rohan Jain'}</title>
 			</Head>
-			<div className="flex justify-center m-2 p-3 mt-20 pt-16">
+			<div className="flex justify-center m-2 mt-0 p-3 pt-36">
 				<h1 className="text-5xl font-semibold text-center">{data.name}</h1>
 			</div>
 			<div className="flex md:w-5/6 mx-auto flex-col md:flex-row">
