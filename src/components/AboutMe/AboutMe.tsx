@@ -6,7 +6,7 @@ import AnimateWhenVisible from '../utils/AnimateWhenVisible';
 export default function AboutMe(): JSX.Element {
 	return (
 		<Section id="about-me" title="About Me" inverted>
-			<div className="flex justify-center mr-0 sm:mr-4 mb-4 sm:mb-0">
+			<div className="flex justify-center mr-0 sm:mr-4 mb-4 sm:mb-0 items-center">
 				<AnimateWhenVisible
 					variants={{
 						hidden: {
@@ -38,16 +38,68 @@ export default function AboutMe(): JSX.Element {
 						},
 					}}>
 					<motion.p>
-						- 4 adjectives to describe yourself, 2 personality 2 work. -
-						Qualification - where are you from? - what do you want to do? - key
-						interest fields Lorem ipsum dolor sit amet, consectetur adipiscing
-						elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-						aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-						laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-						dolor in reprehenderit in voluptate velit esse cillum dolore eu
-						fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est
-						laborum.
+						I am a full stack developer from New Delhi and a 3rd year BTech
+						student from{' '}
+						<a
+							href="https://www.iiitd.ac.in/"
+							target="_blank"
+							rel="noreferrer"
+							className="text-accent hover:underline">
+							IIITD
+						</a>
+						. I work with{' '}
+						<a
+							href="https://www.geeksforgeeks.org/mern-stack/"
+							target="_blank"
+							rel="noreferrer"
+							className="text-accent hover:underline">
+							MERN
+						</a>{' '}
+						stack,{' '}
+						<a
+							href="https://www.nextjs.com"
+							target="_blank"
+							rel="noreferrer"
+							className="text-accent hover:underline">
+							Nextjs
+						</a>
+						,{' '}
+						<a
+							href="https://www.svelte.dev"
+							target="_blank"
+							rel="noreferrer"
+							className="text-accent hover:underline">
+							Svelte
+						</a>
+						,{' '}
+						<a
+							href="https://flask.palletsprojects.com/en/2.0.x/"
+							target="_blank"
+							rel="noreferrer"
+							className="text-accent hover:underline">
+							Flask
+						</a>{' '}
+						and{' '}
+						<a
+							href="https://www.djangoproject.com/"
+							target="_blank"
+							rel="noreferrer"
+							className="text-accent hover:underline">
+							Django
+						</a>
+						. <br /> <br />I am passionate about problem solving and coming up
+						with innovative solutions. I can pick up new skills quickly and
+						juggle multiple projects with relative ease. <br />
+						<br />I am currently learning Machine Learning and working as a
+						front end developer for{' '}
+						<a
+							href="https://www.memboro.com/"
+							target="_blank"
+							rel="noreferrer"
+							className="text-accent hover:underline">
+							Memboro
+						</a>
+						. I am interested in working on creative projects.
 					</motion.p>
 				</AnimateWhenVisible>
 			</div>
