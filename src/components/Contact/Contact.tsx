@@ -34,7 +34,7 @@ export default function Contact(): JSX.Element {
 			})
 			.catch(err => {
 				setIsLoading(false);
-				setResponse(err.response.data.errmess);
+				setResponse(err?.response?.data?.errmess);
 				setResponseState('error');
 				// eslint-disable-next-line no-console
 				console.log('Error', err);

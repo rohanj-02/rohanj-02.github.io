@@ -58,7 +58,7 @@ export default function Layout({ children }: LayoutPropTypes): JSX.Element {
 					<meta name="twitter:card" content="summary" key="twcard" />
 					<meta
 						property="og:url"
-						content={'https://www.rohanj02.vercel.app'}
+						content={`${process.env.NEXT_PUBLIC_URL}`}
 						key="ogurl"
 					/>
 					<meta
@@ -68,7 +68,7 @@ export default function Layout({ children }: LayoutPropTypes): JSX.Element {
 					/>
 					<meta
 						property="og:image:secure_url"
-						content="https://rohanj02.vercel.app/images/rj-logo.jpg"
+						content={`${process.env.NEXT_PUBLIC_URL}/images/rj-logo.svg`}
 					/>
 					<meta property="og:image:type" content="image/svg" />
 					<meta property="og:image:width" content="512" />
@@ -79,8 +79,6 @@ export default function Layout({ children }: LayoutPropTypes): JSX.Element {
 						content="Rohan Jain | Portfolio"
 						key="ogsitename"
 					/>
-					<meta property="og:title" content={pageTitle} key="ogtitle" />
-					<meta property="og:description" content={description} key="ogdesc" />
 				</Head>
 
 				<Navbar />
