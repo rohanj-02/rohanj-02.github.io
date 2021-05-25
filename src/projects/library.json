@@ -1,7 +1,7 @@
 {
 	"name": "Library Portal Revamp IIITD",
 	"description": "A complete revamp of the IIITD library portal using Svelte and Sapper with Drupal as a headless content management system. I am currently working on this.",
-	"images": ["/images/Library-Cover.png"],
+	"images": ["/images/Library/Library-Cover.webp"],
 	"website": "",
 	"github": "",
 	"technologies": ["Svelte", "Sapper", "Drupal"]

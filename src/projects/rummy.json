@@ -2,8 +2,8 @@
 	"name": "Rummy",
 	"description": "The popular card game, Rummy implemented using python's pygame library. The game is played between player and computer. The project was made in the Introduction To Programming course in my 1st semester of BTech.",
 	"images": [
-		"/images/Rummy/Homescreen.png",
-		"/images/Rummy/Gamescreen.png",
+		"/images/Rummy/Homescreen.webp",
+		"/images/Rummy/Gamescreen.webp",
 		"/images/Rummy/HowToPlay.mp4",
 		"/images/Rummy/MainGameplay.mp4",
 		"/images/Rummy/ValidDeclare.mp4"

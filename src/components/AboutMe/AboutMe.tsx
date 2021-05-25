@@ -20,7 +20,7 @@ export default function AboutMe(): JSX.Element {
 						},
 					}}>
 					<motion.img
-						src="./images/profile_image.png"
+						src="./images/profile_image.webp"
 						className="max-h-72"
 						alt="Rohan Jain"
 					/>

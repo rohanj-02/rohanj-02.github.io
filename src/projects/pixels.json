@@ -2,11 +2,11 @@
 	"name": "PIXELS",
 	"description": "An aesthetically designed, fun-to-interact-with art installation that reacts to a person's movement, and conveys a feeling of friendliness to the viewer.",
 	"images": [
-		"/images/Pixels.webp",
-		"/images/Pixels-1.jpg",
-		"/images/Pixels-2.jpg",
-		"/images/Pixels-3.jpg",
-		"/images/Pixels-4.jpg"
+		"/images/Pixels/Pixels.webp",
+		"/images/Pixels/Pixels-1.webp",
+		"/images/Pixels/Pixels-2.webp",
+		"/images/Pixels/Pixels-3.webp",
+		"/images/Pixels/Pixels-4.webp"
 	],
 	"website": "https://rohan19095.wixsite.com/mysite",
 	"github": "https://github.com/rohanj-02/Pixels",

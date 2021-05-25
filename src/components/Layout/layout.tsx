@@ -58,19 +58,19 @@ export default function Layout({ children }: LayoutPropTypes): JSX.Element {
 					<meta name="twitter:card" content="summary" key="twcard" />
 					<meta
 						property="og:url"
-						content={`${process.env.NEXT_PUBLIC_VERCEL_URL}`}
+						content={`${process.env.PUBLIC_URL}`}
 						key="ogurl"
 					/>
 					<meta
 						property="og:image"
-						content="/images/rj-logo.svg"
+						content="/images/rj-logo.webp"
 						key="ogimage"
 					/>
 					<meta
 						property="og:image:secure_url"
-						content={`${process.env.NEXT_PUBLIC_VERCEL_URL}/images/rj-logo.svg`}
+						content={`${process.env.PUBLIC_URL}/images/rj-logo.webp`}
 					/>
-					<meta property="og:image:type" content="image/svg" />
+					<meta property="og:image:type" content="image/webp" />
 					<meta property="og:image:width" content="512" />
 					<meta property="og:image:height" content="512" />
 					<meta property="og:image:alt" content="RJ Logo" />

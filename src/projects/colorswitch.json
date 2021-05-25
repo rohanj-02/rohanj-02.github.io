@@ -2,11 +2,11 @@
 	"name": "Color Switch",
 	"description": "A clone of the popular game Color Switch made for Advanced Programming course in my 3rd semester. The focus of the project was to learn OOP concepts in Java.",
 	"images": [
-		"/images/ColorSwitch/Landing-Landscape.png",
-		"/images/ColorSwitch/Gameplay.png",
-		"/images/ColorSwitch/PauseMenu.png",
-		"/images/ColorSwitch/Continue.png",
-		"/images/ColorSwitch/ConfirmExit.png",
+		"/images/ColorSwitch/Landing-Landscape.webp",
+		"/images/ColorSwitch/Gameplay.webp",
+		"/images/ColorSwitch/PauseMenu.webp",
+		"/images/ColorSwitch/Continue.webp",
+		"/images/ColorSwitch/ConfirmExit.webp",
 		"/images/ColorSwitch/NormalGameplay.webm",
 		"/images/ColorSwitch/BonusGameplay.webm"
 	],
