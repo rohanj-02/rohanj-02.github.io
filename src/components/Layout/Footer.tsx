@@ -34,7 +34,7 @@ function Footer({ theme }: { theme: string }): JSX.Element {
 				<div
 					id="contact"
 					className="flex flex-col flex-wrap md:flex-nowrap md:flex-row lg:w-1/2 md:w-3/4 sm:w-5/6 m-2 p-2">
-					<div className="flex-grow m-2 p-2">
+					<div className="grow m-2 p-2">
 						{arr.map((elem, index) => (
 							<a
 								href={elem.href}
@@ -46,7 +46,7 @@ function Footer({ theme }: { theme: string }): JSX.Element {
 							</a>
 						))}
 					</div>
-					<div className="flex flex-grow m-2 p-2 items-center">
+					<div className="flex grow m-2 p-2 items-center">
 						<SocialLinks />
 					</div>
 				</div>

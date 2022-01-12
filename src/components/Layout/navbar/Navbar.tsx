@@ -70,7 +70,7 @@ export default function Navbar(): JSX.Element {
 		<div className="fixed top-0 left-0 w-full z-50">
 			<nav className={navClass} id="navbar" style={{ transition: '0.4s' }}>
 				<div className="flex flex-1">
-					<div id="logo" className="flex items-center flex-shrink-0">
+					<div id="logo" className="flex items-center shrink-0">
 						<Link href="/#">
 							<a>
 								<img

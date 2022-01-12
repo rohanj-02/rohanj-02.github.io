@@ -1,5 +1,7 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
-	purge: [
+	content: [
 		'./src/pages/**/*.{js,ts,jsx,tsx}',
 		'./src/components/**/*.{js,ts,jsx,tsx}',
 	],
@@ -27,6 +29,10 @@ module.exports = {
 				muted: 'var(--color-muted)',
 				hoverCol: 'var(--color-hover)',
 				placeholderCol: 'var(--color-placeholder)',
+				green: colors.emerald,
+				yellow: colors.amber,
+				purple: colors.violet,
+				current: 'currentColor',
 				// darkestHue: 'rgb(9, 11, 15)',
 				// darkestHue: 'rgba(13, 17, 24, 0.87)',
 			},

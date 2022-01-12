@@ -68,7 +68,7 @@ export default function Hero(): JSX.Element {
 				</svg>
 			</div>
 
-			{/* <div className="m-4 p-4 flex-grow bottom-0 flex">
+			{/* <div className="m-4 p-4 grow bottom-0 flex">
 				<img
 					src="./images/down-arrow.png"
 					className="mt-auto mb-0 flex-col-reverse"

@@ -45,7 +45,7 @@ export default function ProjectCard(props: ProjectCardPropTypes): JSX.Element {
 						<img
 							src={images[0]}
 							alt={description}
-							className="object-cover flex-grow self-stretch"
+							className="object-cover grow self-stretch"
 						/>
 					</div>
 				</motion.a>

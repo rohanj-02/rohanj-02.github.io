@@ -19,7 +19,7 @@ export default function SocialBadge(props: BadgeProps): JSX.Element {
 			<Link href={props.link}>
 				<a target="_blank" rel="noreferrer">
 					<span className="a11y-hidden">{props.iconName}</span>
-					<div className="p-2 text-center h-10 w-10 hover:text-accent hover:translate-x-2 transition duration-200">
+					<div className="p-2 text-center h-10 w-10 hover:text-accent transition duration-200">
 						{props.icon}
 					</div>
 				</a>
