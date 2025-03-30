@@ -42,68 +42,37 @@ export default function AboutMe(): JSX.Element {
 						},
 					}}>
 					<motion.p>
-						I am a full stack developer from New Delhi and a 3rd year BTech
-						student from{' '}
+						I am a software engineer specializing in scalable system design and
+						distributed systems. Currently working at Goldman Sachs, I build and
+						optimize high-performance microservices that handle millions of
+						daily requests. My expertise spans Java, Spring Boot, AWS, and
+						various cloud technologies, with a focus on creating resilient
+						architectures that evolve with business needs.
+						<br /> <br />
+						Previously, I worked as a founding engineer at{' '}
+						<a
+							href="https://thememboro.com"
+							target="_blank"
+							rel="noreferrer"
+							className="text-accent hover:underline">
+							Memboro
+						</a>
+						, where I helped build a social media platform from the ground up. I
+						graduated from{' '}
 						<a
 							href="https://www.iiitd.ac.in/"
 							target="_blank"
 							rel="noreferrer"
 							className="text-accent hover:underline">
 							IIITD
-						</a>
-						. I work with{' '}
-						<a
-							href="https://www.geeksforgeeks.org/mern-stack/"
-							target="_blank"
-							rel="noreferrer"
-							className="text-accent hover:underline">
-							MERN
 						</a>{' '}
-						stack,{' '}
-						<a
-							href="https://www.nextjs.com"
-							target="_blank"
-							rel="noreferrer"
-							className="text-accent hover:underline">
-							Nextjs
-						</a>
-						,{' '}
-						<a
-							href="https://www.svelte.dev"
-							target="_blank"
-							rel="noreferrer"
-							className="text-accent hover:underline">
-							Svelte
-						</a>
-						,{' '}
-						<a
-							href="https://flask.palletsprojects.com/en/2.0.x/"
-							target="_blank"
-							rel="noreferrer"
-							className="text-accent hover:underline">
-							Flask
-						</a>{' '}
-						and{' '}
-						<a
-							href="https://www.djangoproject.com/"
-							target="_blank"
-							rel="noreferrer"
-							className="text-accent hover:underline">
-							Django
-						</a>
-						. <br /> <br />I am passionate about problem solving and coming up
-						with innovative solutions. I can pick up new skills quickly and
-						juggle multiple projects with relative ease. <br />
-						<br />I am currently learning Machine Learning and working as a
-						front end developer for{' '}
-						<a
-							href="https://www.memboro.com/"
-							target="_blank"
-							rel="noreferrer"
-							className="text-accent hover:underline">
-							Memboro
-						</a>
-						. I am interested in working on creative projects.
+						with a BTech in Computer Science.
+						<br /> <br />I am passionate about system design patterns and
+						cloud-native architectures, constantly exploring ways to improve
+						performance, reliability, and scalability in distributed systems. My
+						recent work has focused on optimizing microservices architectures
+						and enhancing system reliability through advanced monitoring and
+						automated testing.
 					</motion.p>
 				</AnimateWhenVisible>
 			</div>

@@ -35,7 +35,7 @@ export function getProjectData(slug: string): ProjectSlug {
 }
 
 export function getFeaturedProjects(): [ProjectSlug] {
-	const featured = ['styra', 'memboro', 'library'];
+	const featured = ['thesnapfuel', 'styra', 'memboro', 'library'];
 	const returnValue: [ProjectSlug] = [] as any;
 	featured.forEach(slug => {
 		const projData = getProjectData(slug);
@@ -47,6 +47,7 @@ export function getFeaturedProjects(): [ProjectSlug] {
 
 export function getAllProjects(): [ProjectSlug] {
 	const slugs = [
+		'thesnapfuel',
 		'styra',
 		'memboro',
 		'library',

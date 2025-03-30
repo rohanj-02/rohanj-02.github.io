@@ -38,7 +38,7 @@ export default function Layout({ children }: LayoutPropTypes): JSX.Element {
 
 	const pageTitle = 'Rohan Jain';
 	const description =
-		"This is Rohan Jain's portfolio page. He is a fullstack web developer currently studying in IIITD and working as a frontend developer for Memboro. He is familiar with MERN stack, Svelte, Nextjs, Svelte, Flask and Django.";
+		'Software Engineer specializing in distributed systems and scalable architecture. Experienced in building high-performance microservices, optimizing system reliability, and designing resilient cloud-native solutions that handle millions of daily requests.';
 	return (
 		<ThemeContext.Provider value={{ theme, toggleTheme }}>
 			<div className={theme + ' bg-primary text-secondary'}>

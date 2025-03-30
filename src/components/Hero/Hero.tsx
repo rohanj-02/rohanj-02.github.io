@@ -37,7 +37,7 @@ export default function Hero(): JSX.Element {
 				className="z-10"
 				variants={getFadeInVariants(0.8)}>
 				<p className="text-4xl font-medium m-2 p-2 text-center">
-					I am a full stack web developer.
+					I am a Software Engineer specializing in distributed systems.
 				</p>
 			</motion.div>
 			<motion.div

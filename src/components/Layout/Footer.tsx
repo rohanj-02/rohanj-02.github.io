@@ -8,8 +8,8 @@ function Footer({ theme }: { theme: string }): JSX.Element {
 	const arr = [
 		{
 			icon: <GrMail style={iconStyle} />,
-			text: 'rohan19095@iiitd.ac.in',
-			href: 'mailto:rohan19095@iiitd.ac.in',
+			text: 'rohan.jain02@gmail.com',
+			href: 'mailto:rohan.jain02@gmail.com',
 		},
 		{
 			icon: <FaPhoneAlt style={iconStyle} />,
