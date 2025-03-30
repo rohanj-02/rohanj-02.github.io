@@ -18,8 +18,7 @@ export default function AboutMe(): JSX.Element {
 								delay: 0.5,
 							},
 						},
-					}}
-				>
+					}}>
 					<motion.img
 						src="./images/profile_image.webp"
 						className="max-h-72"
@@ -41,42 +40,62 @@ export default function AboutMe(): JSX.Element {
 								delay: 0.5,
 							},
 						},
-					}}
-				>
+					}}>
 					<motion.p>
-						I am a software engineer specializing in scalable system design and
-						distributed systems. Currently working at Goldman Sachs, I build and
-						optimize high-performance microservices that handle millions of
-						daily requests. My expertise spans Java, Spring Boot, AWS, and
-						various cloud technologies, with a focus on creating resilient
-						architectures that evolve with business needs.
-						<br /> <br />
-						Previously, I worked as a founding engineer at{' '}
+						I&apos;m a software engineer with a knack for learning—and for
+						capturing the world through my lens. At{' '}
+						<a
+							href="https://www.goldmansachs.com/"
+							target="_blank"
+							rel="noreferrer"
+							className="text-accent hover:underline">
+							Goldman Sachs
+						</a>
+						, I build and optimize high-performance{' '}
+						<a
+							href="https://spring.io/projects/spring-boot"
+							target="_blank"
+							rel="noreferrer"
+							className="text-accent hover:underline">
+							Spring Boot
+						</a>{' '}
+						microservices with resilient architectures deployed on{' '}
+						<a
+							href="https://aws.amazon.com/"
+							target="_blank"
+							rel="noreferrer"
+							className="text-accent hover:underline">
+							AWS
+						</a>{' '}
+						using{' '}
+						<a
+							href="https://www.terraform.io/"
+							target="_blank"
+							rel="noreferrer"
+							className="text-accent hover:underline">
+							Terraform
+						</a>
+						.<br></br>
+						<br></br>
+						Previously, as a founding engineer at{' '}
 						<a
 							href="https://thememboro.com"
 							target="_blank"
 							rel="noreferrer"
-							className="text-accent hover:underline"
-						>
+							className="text-accent hover:underline">
 							Memboro
 						</a>
-						, where I helped build a social media platform from the ground up. I
-						graduated from{' '}
+						, I helped build a social media platform from the ground up. I hold
+						a BTech in Computer Science from{' '}
 						<a
 							href="https://www.iiitd.ac.in/"
 							target="_blank"
 							rel="noreferrer"
-							className="text-accent hover:underline"
-						>
+							className="text-accent hover:underline">
 							IIITD
 						</a>{' '}
-						with a BTech in Computer Science.
-						<br /> <br />I am passionate about system design patterns and
-						cloud-native architectures, constantly exploring ways to improve
-						performance, reliability, and scalability in distributed systems. My
-						recent work has focused on optimizing microservices architectures
-						and enhancing system reliability through advanced monitoring and
-						automated testing.
+						and have a passion for automating the mundane tasks, refining
+						workflows, and constantly expanding my knowledge.
 					</motion.p>
 				</AnimateWhenVisible>
 			</div>
