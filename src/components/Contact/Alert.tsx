@@ -29,7 +29,8 @@ export default function Alert(props: Props): JSX.Element {
 				classNames +
 				' px-4 py-3 rounded border-2 relative w-full m-2 bg-opacity-30'
 			}
-			role="alert">
+			role="alert"
+		>
 			{/* <strong className="font-bold">Holy smokes!</strong> */}
 			<span className="block sm:inline">{message}</span>
 			{/* <span className="absolute top-0 bottom-0 right-0 px-4 py-3">

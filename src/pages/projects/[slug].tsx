@@ -20,11 +20,7 @@ export async function getStaticPaths(): Promise<{
 	};
 }
 
-export async function getStaticProps({
-	params,
-}: {
-	params: any;
-}): Promise<{
+export async function getStaticProps({ params }: { params: any }): Promise<{
 	props: {
 		data: ProjectSlug;
 	};
@@ -53,7 +49,7 @@ export default function Project({ data }: { data: ProjectSlug }): JSX.Element {
 				<div className="m-4 p-4 mt-2 pt-2 md:ml-0 md:mt-4 md:pt-4 md:pl-0 md:w-1/2">
 					<p>{data.description}</p>
 					<div className="mt-6">
-						<Technologies tech={data.technologies} inverted />
+						<Technologies tech={data.technologies || []} inverted />
 					</div>
 					<div className="mt-6">
 						<ProjectLinks

@@ -10,8 +10,9 @@ type LayoutPropTypes = {
 export default function Layout({ children }: LayoutPropTypes): JSX.Element {
 	const [theme, setTheme] = useState('');
 	useEffect(() => {
-		if (window.localStorage.getItem('theme_preference')) {
-			setTheme(window.localStorage.getItem('theme_preference'));
+		const storedTheme = window.localStorage.getItem('theme_preference');
+		if (storedTheme) {
+			setTheme(storedTheme);
 		} else {
 			// Code for system preference
 			// const compStyles = window.getComputedStyle(
@@ -23,9 +24,9 @@ export default function Layout({ children }: LayoutPropTypes): JSX.Element {
 			// 		: 'theme-dark';
 			const themePreference = 'theme-dark';
 			window.localStorage.setItem('theme_preference', themePreference);
-			setTheme(window.localStorage.getItem('theme_preference'));
+			setTheme(themePreference);
 		}
-	});
+	}, []);
 	const toggleTheme = () => {
 		if (theme === 'theme-light') {
 			setTheme('theme-dark');
@@ -43,11 +44,6 @@ export default function Layout({ children }: LayoutPropTypes): JSX.Element {
 		<ThemeContext.Provider value={{ theme, toggleTheme }}>
 			<div className={theme + ' bg-primary text-secondary'}>
 				<Head>
-					<link rel="preconnect" href="https://fonts.gstatic.com" />
-					<link
-						href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
-						rel="stylesheet"
-					/>
 					<title>{pageTitle}</title>
 					<link rel="icon" href="/favicon.ico" />
 					<meta name="viewport" content="width=device-width, initial-scale=1" />

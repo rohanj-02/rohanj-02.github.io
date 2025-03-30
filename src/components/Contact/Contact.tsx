@@ -46,7 +46,8 @@ export default function Contact(): JSX.Element {
 			<FadeInWhenVisible classNames="sm:container max-w-4xl m-2 p-2 flex flex-col items-center justify-center">
 				<div
 					className="m-4 p-8 w-full"
-					style={{ background: 'rgba(255,255,255,0.1)' }}>
+					style={{ background: 'rgba(255,255,255,0.1)' }}
+				>
 					<form className="flex flex-col">
 						<div className="m-2 mb-3 pt-0">
 							<input
@@ -80,7 +81,8 @@ export default function Contact(): JSX.Element {
 					type="submit"
 					disabled={isLoading}
 					onClick={handleSubmit}
-					className="w-full flex sm:w-1/2 md:w-1/4 px-4 py-2 bg-accent m-2 mt-3 text-secondary justify-center items-center">
+					className="w-full flex sm:w-1/2 md:w-1/4 px-4 py-2 bg-accent m-2 mt-3 text-secondary justify-center items-center"
+				>
 					{isLoading ? <Loader /> : 'Submit'}
 				</button>
 			</FadeInWhenVisible>

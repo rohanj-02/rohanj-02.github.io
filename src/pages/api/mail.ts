@@ -1,5 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next';
+import { SentMessageInfo } from 'nodemailer';
 const nodeMailer = require('nodemailer');
 
 export default async (
@@ -22,26 +23,29 @@ export default async (
 	};
 
 	return new Promise(resolve => {
-		transporter.sendMail(mailMessage, function (error, data) {
-			if (error) {
-				res.status(400).json({
-					errmess:
-						'Your message could not be sent! Please try again later or mail me at rohan19095@iiitd.ac.in!',
-				});
-				// eslint-disable-next-line no-console
-				console.log(error);
-				res.end();
-				return resolve();
-			} else {
-				// eslint-disable-next-line no-console
-				console.log('Email sent: ' + data.response);
-				// res.send(200, { message: 'Your message has been succesfully sent!' });
-				res
-					.status(200)
-					.json({ message: 'Your message has been succesfully sent!' });
-				res.end();
-				return resolve();
+		transporter.sendMail(
+			mailMessage,
+			function (error: Error | null, data: SentMessageInfo) {
+				if (error) {
+					res.status(400).json({
+						errmess:
+							'Your message could not be sent! Please try again later or mail me at rohan.jain02@gmail.com!',
+					});
+					// eslint-disable-next-line no-console
+					console.log(error);
+					res.end();
+					return resolve();
+				} else {
+					// eslint-disable-next-line no-console
+					console.log('Email sent: ' + data.response);
+					// res.send(200, { message: 'Your message has been succesfully sent!' });
+					res
+						.status(200)
+						.json({ message: 'Your message has been succesfully sent!' });
+					res.end();
+					return resolve();
+				}
 			}
-		});
+		);
 	});
 };

@@ -21,12 +21,12 @@ export default function MediaObject({
 		<div className="min-h-64 h-full">
 			{isImagePath(filePath) ? (
 				<motion.img
-					{...((mediaProps as unknown) as MotionProps)}
+					{...(mediaProps as unknown as MotionProps)}
 					className={className}
 				/>
 			) : (
 				<motion.video
-					{...((mediaProps as unknown) as MotionProps)}
+					{...(mediaProps as unknown as MotionProps)}
 					controls
 					className={className}
 				/>

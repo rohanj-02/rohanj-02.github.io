@@ -18,7 +18,8 @@ export default function AboutMe(): JSX.Element {
 								delay: 0.5,
 							},
 						},
-					}}>
+					}}
+				>
 					<motion.img
 						src="./images/profile_image.webp"
 						className="max-h-72"
@@ -40,7 +41,8 @@ export default function AboutMe(): JSX.Element {
 								delay: 0.5,
 							},
 						},
-					}}>
+					}}
+				>
 					<motion.p>
 						I am a software engineer specializing in scalable system design and
 						distributed systems. Currently working at Goldman Sachs, I build and
@@ -54,7 +56,8 @@ export default function AboutMe(): JSX.Element {
 							href="https://thememboro.com"
 							target="_blank"
 							rel="noreferrer"
-							className="text-accent hover:underline">
+							className="text-accent hover:underline"
+						>
 							Memboro
 						</a>
 						, where I helped build a social media platform from the ground up. I
@@ -63,7 +66,8 @@ export default function AboutMe(): JSX.Element {
 							href="https://www.iiitd.ac.in/"
 							target="_blank"
 							rel="noreferrer"
-							className="text-accent hover:underline">
+							className="text-accent hover:underline"
+						>
 							IIITD
 						</a>{' '}
 						with a BTech in Computer Science.

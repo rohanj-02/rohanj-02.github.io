@@ -23,7 +23,8 @@ export default function Section({
 		<section
 			id={id || 'invalid'}
 			style={{ scrollMarginTop: '5rem' }}
-			className={sectionClassNames}>
+			className={sectionClassNames}
+		>
 			<FadeInWhenVisible resetAnimation={resetAnimation}>
 				{title && (
 					<div className="mx-4 mt-16 mb-8 p-4">
