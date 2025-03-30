@@ -18,7 +18,8 @@ export default function AboutMe(): JSX.Element {
 								delay: 0.5,
 							},
 						},
-					}}>
+					}}
+				>
 					<motion.img
 						src="./images/profile_image.webp"
 						className="max-h-72"
@@ -40,7 +41,8 @@ export default function AboutMe(): JSX.Element {
 								delay: 0.5,
 							},
 						},
-					}}>
+					}}
+				>
 					<motion.p>
 						I&apos;m a software engineer with a knack for learning—and for
 						capturing the world through my lens. At{' '}
@@ -48,7 +50,8 @@ export default function AboutMe(): JSX.Element {
 							href="https://www.goldmansachs.com/"
 							target="_blank"
 							rel="noreferrer"
-							className="text-accent hover:underline">
+							className="text-accent hover:underline"
+						>
 							Goldman Sachs
 						</a>
 						, I build and optimize high-performance{' '}
@@ -56,7 +59,8 @@ export default function AboutMe(): JSX.Element {
 							href="https://spring.io/projects/spring-boot"
 							target="_blank"
 							rel="noreferrer"
-							className="text-accent hover:underline">
+							className="text-accent hover:underline"
+						>
 							Spring Boot
 						</a>{' '}
 						microservices with resilient architectures deployed on{' '}
@@ -64,7 +68,8 @@ export default function AboutMe(): JSX.Element {
 							href="https://aws.amazon.com/"
 							target="_blank"
 							rel="noreferrer"
-							className="text-accent hover:underline">
+							className="text-accent hover:underline"
+						>
 							AWS
 						</a>{' '}
 						using{' '}
@@ -72,7 +77,8 @@ export default function AboutMe(): JSX.Element {
 							href="https://www.terraform.io/"
 							target="_blank"
 							rel="noreferrer"
-							className="text-accent hover:underline">
+							className="text-accent hover:underline"
+						>
 							Terraform
 						</a>
 						.<br></br>
@@ -82,7 +88,8 @@ export default function AboutMe(): JSX.Element {
 							href="https://thememboro.com"
 							target="_blank"
 							rel="noreferrer"
-							className="text-accent hover:underline">
+							className="text-accent hover:underline"
+						>
 							Memboro
 						</a>
 						, I helped build a social media platform from the ground up. I hold
@@ -91,7 +98,8 @@ export default function AboutMe(): JSX.Element {
 							href="https://www.iiitd.ac.in/"
 							target="_blank"
 							rel="noreferrer"
-							className="text-accent hover:underline">
+							className="text-accent hover:underline"
+						>
 							IIITD
 						</a>{' '}
 						and have a passion for automating the mundane tasks, refining
