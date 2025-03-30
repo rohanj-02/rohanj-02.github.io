@@ -116,18 +116,21 @@ function MediaCarousel({
 				</AnimatePresence>
 				<div
 					className={`${styles.next} bg-secondary text-primary w-10 h-10 rounded-full transition duration-200 shadow-lg hover:bg-primary hover:text-accent`}
-					onClick={() => paginate(1)}>
+					onClick={() => paginate(1)}
+				>
 					<BsCaretRightFill />
 				</div>
 				<div
 					className={`${styles.prev} bg-secondary text-primary w-10 h-10 rounded-full transition duration-200 shadow-lg hover:bg-primary hover:text-accent`}
-					onClick={() => paginate(-1)}>
+					onClick={() => paginate(-1)}
+				>
 					<BsCaretLeftFill />
 				</div>
 				{showFullScreenButton && setOpen && (
 					<div
 						className={`${styles.fullscreen} bg-secondary text-primary w-10 h-10 rounded-md transition duration-200 shadow-md hover:text-accent`}
-						onClick={() => setOpen(true)}>
+						onClick={() => setOpen(true)}
+					>
 						<BsFullscreen style={{ opacity: 1 }} />
 					</div>
 				)}
