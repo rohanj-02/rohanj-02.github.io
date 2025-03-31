@@ -1,15 +1,7 @@
 {
 	"name": "Speech Emotion Recognition",
 	"description": "Implemented state-of-the-art DL models to recognise emotions from speech. Used MFCC and spectrogram features from audio as input to the CNN model on top of fine-tuned AlexNet with an attention mechanism to reach an accuracy of 82% on the EMO DB dataset.",
-	"images": [
-		"/images/TheSnapFuel/LandingAnimation.gif",
-		"/images/TheSnapFuel/HowItWorksAnimation.gif",
-		"/images/TheSnapFuel/SnapFuel1.jpg",
-		"/images/TheSnapFuel/SnapFuel2.jpg",
-		"/images/TheSnapFuel/SnapFuel3.jpg",
-		"/images/TheSnapFuel/SnapFuel4.jpg",
-		"/images/TheSnapFuel/SnapFuel5.jpg",
-		"/images/TheSnapFuel/SnapFuel6.jpg"
-	],
+	"images": [],
+	"docs": ["/docs/SER_Paper.pdf"],
 	"technologies": ["Pytorch"]
 }

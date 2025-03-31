@@ -13,6 +13,7 @@
 	},
 	"dependencies": {
 		"@fullhuman/postcss-purgecss": "^5.0.0",
+		"@typescript-eslint/parser": "^8.28.0",
 		"axios": "^1.6.7",
 		"framer-motion": "^11.0.8",
 		"next": "^15.2.4",
@@ -28,8 +29,7 @@
 		"@types/nodemailer": "^6.4.17",
 		"@types/react": "^18.2.64",
 		"@types/react-dom": "^18.2.21",
-		"@typescript-eslint/eslint-plugin": "^7.1.1",
-		"@typescript-eslint/parser": "^7.1.1",
+		"@typescript-eslint/eslint-plugin": "^8.28.0",
 		"autoprefixer": "^10.4.18",
 		"eslint": "^8.57.0",
 		"eslint-config-prettier": "^9.1.0",
@@ -41,7 +41,7 @@
 		"prettier": "^3.2.5",
 		"pretty-quick": "^4.0.0",
 		"tailwindcss": "^3.4.1",
-		"typescript": "^5.4.2"
+		"typescript": "^5.8.2"
 	},
 	"lint-staged": {
 		"*.{js,jsx,ts,tsx,html,css,json,md,yaml,yml,graphql}": [

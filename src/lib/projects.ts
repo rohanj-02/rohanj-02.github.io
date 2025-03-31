@@ -48,6 +48,7 @@ export function getFeaturedProjects(): [ProjectSlug] {
 export function getAllProjects(): [ProjectSlug] {
 	const slugs = [
 		'thesnapfuel',
+		'ser',
 		'styra',
 		'memboro',
 		'library',

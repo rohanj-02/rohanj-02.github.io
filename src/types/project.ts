@@ -6,6 +6,7 @@ export type Project = {
 	website?: string;
 	github?: string;
 	technologies?: string[];
+	docs: string[];
 };
 
 export type ProjectSlug = Project & { slug: string };

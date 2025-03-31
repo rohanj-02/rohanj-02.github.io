@@ -93,7 +93,7 @@ export default function Navbar(): JSX.Element {
 							<Link
 								href={item.link}
 								key={index}
-								className="flex py-auto px-4 hover:bg-hoverCol"
+								className="flex py-auto px-4 hover:bg-hoverCol transition duration-400"
 							>
 								<div className="my-auto">{item.name}</div>
 							</Link>

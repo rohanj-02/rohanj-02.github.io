@@ -46,7 +46,9 @@ export default function ProjectCard(props: ProjectCardPropTypes): JSX.Element {
 						style={{ alignContent: 'stretch' }}
 					>
 						<img
-							src={images[0]}
+							src={
+								images.length > 0 ? images[0] : '/images/placeholder-doc.png'
+							}
 							alt={description}
 							className="object-cover grow self-stretch"
 						/>
