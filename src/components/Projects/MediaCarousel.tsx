@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
-import { AnimatePresence, MotionProps } from 'framer-motion';
+import { AnimatePresence, MotionProps, PanInfo } from 'framer-motion';
 import { wrap } from 'popmotion';
 import styles from './MediaCarousel.module.css';
 import {
@@ -74,7 +74,10 @@ function MediaCarousel({
 		drag: 'x',
 		dragConstraints: { left: 0, right: 0 },
 		dragElastic: 1,
-		onDragEnd: (e, { offset, velocity }) => {
+		onDragEnd: (
+			_: MouseEvent | TouchEvent | PointerEvent,
+			{ offset, velocity }: PanInfo
+		) => {
 			const swipe = swipePower(offset.x, velocity.x);
 
 			if (swipe < -swipeConfidenceThreshold) {
@@ -104,27 +107,30 @@ function MediaCarousel({
 	return (
 		<>
 			<div className={styles['example-container']} style={style}>
-				<AnimatePresence initial={false} custom={direction} exitBeforeEnter>
+				<AnimatePresence initial={false} custom={direction} mode="wait">
 					<MediaObject
 						objectFit={objectFit}
 						filePath={media[mediaIndex]}
-						mediaProps={(mediaProps as unknown) as MotionProps}
+						mediaProps={mediaProps as unknown as MotionProps}
 					/>
 				</AnimatePresence>
 				<div
 					className={`${styles.next} bg-secondary text-primary w-10 h-10 rounded-full transition duration-200 shadow-lg hover:bg-primary hover:text-accent`}
-					onClick={() => paginate(1)}>
+					onClick={() => paginate(1)}
+				>
 					<BsCaretRightFill />
 				</div>
 				<div
 					className={`${styles.prev} bg-secondary text-primary w-10 h-10 rounded-full transition duration-200 shadow-lg hover:bg-primary hover:text-accent`}
-					onClick={() => paginate(-1)}>
+					onClick={() => paginate(-1)}
+				>
 					<BsCaretLeftFill />
 				</div>
-				{showFullScreenButton && (
+				{showFullScreenButton && setOpen && (
 					<div
 						className={`${styles.fullscreen} bg-secondary text-primary w-10 h-10 rounded-md transition duration-200 shadow-md hover:text-accent`}
-						onClick={() => setOpen(true)}>
+						onClick={() => setOpen(true)}
+					>
 						<BsFullscreen style={{ opacity: 1 }} />
 					</div>
 				)}

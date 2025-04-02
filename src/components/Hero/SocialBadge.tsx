@@ -15,14 +15,16 @@ export default function SocialBadge(props: BadgeProps): JSX.Element {
 				y: '-0.25rem',
 				transition: { duration: 0.2 },
 			}}
-			className="m-2 rounded-full flex">
-			<Link href={props.link}>
-				<a target="_blank" rel="noreferrer">
-					<span className="a11y-hidden">{props.iconName}</span>
-					<div className="p-2 text-center h-10 w-10 hover:text-accent transition duration-200">
-						{props.icon}
-					</div>
-				</a>
+			className="m-2 rounded-full flex"
+		>
+			<Link
+				href={props.link}
+				target="_blank"
+				rel="noreferrer"
+				className="p-2 text-center h-10 w-10 hover:text-accent transition duration-200"
+			>
+				<span className="a11y-hidden">{props.iconName}</span>
+				{props.icon}
 			</Link>
 		</motion.div>
 	);

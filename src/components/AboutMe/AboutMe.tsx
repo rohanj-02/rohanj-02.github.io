@@ -18,7 +18,8 @@ export default function AboutMe(): JSX.Element {
 								delay: 0.5,
 							},
 						},
-					}}>
+					}}
+				>
 					<motion.img
 						src="./images/profile_image.webp"
 						className="max-h-72"
@@ -40,70 +41,69 @@ export default function AboutMe(): JSX.Element {
 								delay: 0.5,
 							},
 						},
-					}}>
+					}}
+				>
 					<motion.p>
-						I am a full stack developer from New Delhi and a 3rd year BTech
-						student from{' '}
+						I&apos;m a software engineer with a knack for learning—and for
+						capturing the world through my lens. At{' '}
+						<a
+							href="https://www.goldmansachs.com/"
+							target="_blank"
+							rel="noreferrer"
+							className="text-accent hover:underline"
+						>
+							Goldman Sachs
+						</a>
+						, I build and optimize high-performance{' '}
+						<a
+							href="https://spring.io/projects/spring-boot"
+							target="_blank"
+							rel="noreferrer"
+							className="text-accent hover:underline"
+						>
+							Spring Boot
+						</a>{' '}
+						microservices with resilient architectures deployed on{' '}
+						<a
+							href="https://aws.amazon.com/"
+							target="_blank"
+							rel="noreferrer"
+							className="text-accent hover:underline"
+						>
+							AWS
+						</a>{' '}
+						using{' '}
+						<a
+							href="https://www.terraform.io/"
+							target="_blank"
+							rel="noreferrer"
+							className="text-accent hover:underline"
+						>
+							Terraform
+						</a>
+						.<br></br>
+						<br></br>
+						Previously, as a founding engineer at{' '}
+						<a
+							href="https://thememboro.com"
+							target="_blank"
+							rel="noreferrer"
+							className="text-accent hover:underline"
+						>
+							Memboro
+						</a>
+						, I helped build a social media platform from the ground up. I hold
+						a BTech in Computer Science from{' '}
 						<a
 							href="https://www.iiitd.ac.in/"
 							target="_blank"
 							rel="noreferrer"
-							className="text-accent hover:underline">
+							className="text-accent hover:underline"
+						>
 							IIITD
-						</a>
-						. I work with{' '}
-						<a
-							href="https://www.geeksforgeeks.org/mern-stack/"
-							target="_blank"
-							rel="noreferrer"
-							className="text-accent hover:underline">
-							MERN
 						</a>{' '}
-						stack,{' '}
-						<a
-							href="https://www.nextjs.com"
-							target="_blank"
-							rel="noreferrer"
-							className="text-accent hover:underline">
-							Nextjs
-						</a>
-						,{' '}
-						<a
-							href="https://www.svelte.dev"
-							target="_blank"
-							rel="noreferrer"
-							className="text-accent hover:underline">
-							Svelte
-						</a>
-						,{' '}
-						<a
-							href="https://flask.palletsprojects.com/en/2.0.x/"
-							target="_blank"
-							rel="noreferrer"
-							className="text-accent hover:underline">
-							Flask
-						</a>{' '}
-						and{' '}
-						<a
-							href="https://www.djangoproject.com/"
-							target="_blank"
-							rel="noreferrer"
-							className="text-accent hover:underline">
-							Django
-						</a>
-						. <br /> <br />I am passionate about problem solving and coming up
-						with innovative solutions. I can pick up new skills quickly and
-						juggle multiple projects with relative ease. <br />
-						<br />I am currently learning Machine Learning and working as a
-						front end developer for{' '}
-						<a
-							href="https://www.memboro.com/"
-							target="_blank"
-							rel="noreferrer"
-							className="text-accent hover:underline">
-							Memboro
-						</a>
-						. I am interested in working on creative projects.
+						and have a passion for automating the mundane tasks, refining
+						workflows, and constantly expanding my knowledge.
 					</motion.p>
 				</AnimateWhenVisible>
 			</div>

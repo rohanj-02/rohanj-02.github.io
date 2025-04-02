@@ -26,7 +26,8 @@ export default function Hero(): JSX.Element {
 				className="p-4 z-10"
 				initial="hidden"
 				animate="visible"
-				variants={getFadeInVariants(0.4)}>
+				variants={getFadeInVariants(0.4)}
+			>
 				<h1 className="text-6xl font-semibold text-center">
 					Hello, I am <span className="text-accent">Rohan Jain!</span>
 				</h1>
@@ -35,16 +36,20 @@ export default function Hero(): JSX.Element {
 				initial="hidden"
 				animate="visible"
 				className="z-10"
-				variants={getFadeInVariants(0.8)}>
-				<p className="text-4xl font-medium m-2 p-2 text-center">
-					I am a full stack web developer.
+				variants={getFadeInVariants(0.8)}
+			>
+				<p className="text-3xl m-2 p-2 text-center">
+					A software engineer with a passion for building
+					<br />
+					scalable systems and learning new technologies.
 				</p>
 			</motion.div>
 			<motion.div
 				initial="hidden"
 				animate="visible"
 				variants={getFadeInVariants(1)}
-				className="m-4 p-4 z-10">
+				className="m-4 p-4 z-10"
+			>
 				<SocialLinks />
 			</motion.div>
 			<div className="absolute top-0 left-0">
