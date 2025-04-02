@@ -18,7 +18,7 @@ export default function SocialLinks(): JSX.Element {
 		},
 		{
 			icon: <GrMail style={iconStyle} />,
-			link: 'mailto:rohan19095@iiitd.ac.in',
+			link: 'mailto:rohan.jain02@gmail.com',
 			iconName: 'Email',
 		},
 		{

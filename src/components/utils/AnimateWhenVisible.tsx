@@ -46,7 +46,8 @@ IProps): JSX.Element {
 					hidden: { opacity: 0, scale: 0 },
 				}
 			}
-			className={classNames}>
+			className={classNames}
+		>
 			{children}
 		</motion.div>
 	);

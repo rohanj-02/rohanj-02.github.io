@@ -15,6 +15,10 @@ function ProjectLinks(props: Props): JSX.Element {
 	if (!link && !github && !website) {
 		return <></>;
 	}
+
+	const websiteLink = website || link || '';
+	const githubLink = github || link || '';
+
 	return (
 		<div>
 			{/* <h3 className="text-2xl font-semibold">Important Links</h3> */}
@@ -22,7 +26,7 @@ function ProjectLinks(props: Props): JSX.Element {
 			<div className="flex flex-wrap items-center justify-center">
 				{(website || link) && (
 					<SocialBadge
-						link={website || link}
+						link={websiteLink}
 						icon={<BiGlobe style={iconStyle} />}
 						iconName="Website"
 					/>
@@ -30,7 +34,7 @@ function ProjectLinks(props: Props): JSX.Element {
 				{github && (
 					<SocialBadge
 						iconName="Github"
-						link={github || link}
+						link={githubLink}
 						icon={<SiGithub style={iconStyle} />}
 					/>
 				)}

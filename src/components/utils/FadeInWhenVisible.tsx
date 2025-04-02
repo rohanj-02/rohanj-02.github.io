@@ -20,7 +20,8 @@ export default function FadeInWhenVisible({
 		<AnimateWhenVisible
 			variants={variants}
 			resetAnimation={resetAnimation}
-			classNames={classNames}>
+			classNames={classNames}
+		>
 			{children}
 		</AnimateWhenVisible>
 	);

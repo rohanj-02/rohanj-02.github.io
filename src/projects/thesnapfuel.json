@@ -1,0 +1,15 @@
+{
+	"name": "The Snap Fuel",
+	"description": "A freelance project for a startup for users to book tickets to an event and making a marketplace for enabling the trading of those NFT tickets. Developed the front end using Nextjs. ",
+	"images": [
+		"/images/TheSnapFuel/LandingAnimation.gif",
+		"/images/TheSnapFuel/HowItWorksAnimation.gif",
+		"/images/TheSnapFuel/SnapFuel1.jpg",
+		"/images/TheSnapFuel/SnapFuel2.jpg",
+		"/images/TheSnapFuel/SnapFuel3.jpg",
+		"/images/TheSnapFuel/SnapFuel4.jpg",
+		"/images/TheSnapFuel/SnapFuel5.jpg",
+		"/images/TheSnapFuel/SnapFuel6.jpg"
+	],
+	"technologies": ["Nextjs", "Tailwind"]
+}

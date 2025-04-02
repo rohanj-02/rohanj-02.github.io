@@ -46,11 +46,13 @@ export default function Modal({ open, setOpen, children }: Props): JSX.Element {
 			animate="visible"
 			aria-labelledby="modal-title"
 			role="dialog"
-			aria-modal="true">
+			aria-modal="true"
+		>
 			<motion.div
 				className={`items-end justify-center min-h-screen text-center p-0 ${
 					open ? 'block' : 'hidden'
-				}`}>
+				}`}
+			>
 				{/* <!--
 				Background overlay, show/hide based on modal state.
 	
@@ -64,7 +66,8 @@ export default function Modal({ open, setOpen, children }: Props): JSX.Element {
 				<div
 					onClick={() => setOpen(false)}
 					className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
-					aria-hidden="true"></div>
+					aria-hidden="true"
+				></div>
 				{/* <!-- This element is to trick the browser into centering the modal contents. --> */}
 				<span className="inline-block align-middle h-screen" aria-hidden="true">
 					&#8203;
@@ -93,15 +96,18 @@ export default function Modal({ open, setOpen, children }: Props): JSX.Element {
 					}}
 					animate="visible"
 					className="inline-block bg-primary rounded-lg text-left overflow-hidden shadow-xl transform transition-all align-middle max-h-screen-4/5 w-4/5 p-12 md:p-16 lg:p-20"
-					style={{ height: '80vh' }}>
+					style={{ height: '80vh' }}
+				>
 					<span
 						className="absolute top-0 right-0 p-4 drop-shadow-md overflow-visible opacity-70 hover:opacity-100 transition-opacity duration-200"
-						onClick={() => setOpen(false)}>
+						onClick={() => setOpen(false)}
+					>
 						<svg
 							className="h-12 w-12 fill-current overflow-visible "
 							role="button"
 							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 20 20">
+							viewBox="0 0 20 20"
+						>
 							<defs>
 								<filter id="shadow">
 									<feDropShadow

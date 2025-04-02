@@ -20,11 +20,7 @@ export async function getStaticPaths(): Promise<{
 	};
 }
 
-export async function getStaticProps({
-	params,
-}: {
-	params: any;
-}): Promise<{
+export async function getStaticProps({ params }: { params: any }): Promise<{
 	props: {
 		data: ProjectSlug;
 	};
@@ -48,12 +44,15 @@ export default function Project({ data }: { data: ProjectSlug }): JSX.Element {
 			</div>
 			<div className="flex md:w-5/6 mx-auto flex-col md:flex-row">
 				<div className="m-4 p-4 mb-2 pb-2 md:mb-4 md:pb-4 md:w-1/2">
-					<MediaCarouselWrapper media={data.images} slug={data.slug} />
+					<MediaCarouselWrapper
+						media={data.images.concat(data.docs)}
+						slug={data.slug}
+					/>
 				</div>
 				<div className="m-4 p-4 mt-2 pt-2 md:ml-0 md:mt-4 md:pt-4 md:pl-0 md:w-1/2">
 					<p>{data.description}</p>
 					<div className="mt-6">
-						<Technologies tech={data.technologies} inverted />
+						<Technologies tech={data.technologies || []} inverted />
 					</div>
 					<div className="mt-6">
 						<ProjectLinks

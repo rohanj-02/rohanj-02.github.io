@@ -13,7 +13,8 @@ export default function ToggleButton(): JSX.Element {
 						className="h-6 w-6 text-secondary"
 						fill="none"
 						viewBox="0 0 24 24"
-						stroke="currentColor">
+						stroke="currentColor"
+					>
 						<path
 							strokeLinecap="round"
 							strokeLinejoin="round"
@@ -27,19 +28,22 @@ export default function ToggleButton(): JSX.Element {
 						(isLight ? 'bg-gray-300' : 'bg-accent') +
 						' w-14 h-7 flex items-center cursor-pointer rounded-full mx-3 px-1'
 					}
-					onClick={toggleTheme}>
+					onClick={toggleTheme}
+				>
 					<div
 						className={
 							(isLight ? 'translate-x-0' : 'translate-x-7') +
 							' bg-white w-5 h-5 rounded-full shadow-md transform'
-						}></div>
+						}
+					></div>
 				</div>
 				<span className="">
 					<svg
 						className="h-6 w-6 text-secondary"
 						fill="none"
 						viewBox="0 0 24 24"
-						stroke="currentColor">
+						stroke="currentColor"
+					>
 						<path
 							strokeLinecap="round"
 							strokeLinejoin="round"
