@@ -3,6 +3,8 @@ import Navbar from './navbar/Navbar';
 import { ThemeContext } from '../../context/ThemeContext';
 import Head from 'next/head';
 import Footer from './Footer';
+import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 type LayoutPropTypes = {
 	children: React.ReactNode;
@@ -81,6 +83,8 @@ export default function Layout({ children }: LayoutPropTypes): JSX.Element {
 				<div className="themed hidden"></div>
 				{children}
 				<Footer theme={theme} />
+				<Analytics />
+				<SpeedInsights />
 			</div>
 		</ThemeContext.Provider>
 	);
